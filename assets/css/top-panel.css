@@ -1,0 +1,95 @@
+@media (min-width: 800px) {
+  /* свойства верхней панели */
+  .top-panel-root {
+    width: 100%;
+    /* background-color: var(--main-bg1-color); */
+    background-image: url("/assets/img/top_panel.jpg");
+    max-width: 100%;
+    /* width: 100%; */
+    overflow: hidden;
+    /* height: 100%; */
+    object-fit: cover;
+    height: 55px;
+    box-shadow: 0 0 15px;
+  }
+  /* свойства логотипа верхней панели */
+  .top-panel-logo {
+    height: 100%;
+    width: 25%;
+    background-image: url("/assets/img/logo.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    transform: scale(0.7);
+    transition: 0.3s ease-in-out;
+  }
+  .top-panel-logo:hover {
+    cursor: pointer;
+    transform: scale(0.8);
+    /* box-shadow: 0 0 5px var(--main-accent-color); */
+  }
+
+  /* свойства контейнера для кнопок */
+  .top-panel-buttons {
+    height: 100%;
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* свойства обычной кнопки */
+  .top-panel-button {
+    width: 30%;
+    margin: 10px 0px 10px 0px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 5px var(--main-bg2-color);
+  }
+  .top-panel-button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 25px var(--main-accent-color);
+  }
+  /* свойства привлекающей кнопки */
+  .top-panel-button-akcent {
+    box-shadow: 0 0 10px var(--main-accent-color);
+    background-color: var(--main-accent-color);
+    border: 0;
+    border-radius: 5px;
+  }
+  .top-panel-button-akcent:hover {
+    box-shadow: 0 0 15px rgba(82, 224, 82, 0.904);
+    background-color: rgba(21, 195, 21, 0.904);
+  }
+  /* блок контактов на верхней панели */
+  .top-panel-contacts {
+    height: 100%;
+    width: 25%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    transform: scale(0.8);
+  }
+  /* свойства строки с номером телефона */
+  .top-panel-contacts-phone {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--main-accent-color);
+    text-align: right;
+    margin-right: 5px;
+  }
+  /* свойства строки с названием области */
+  .top-panel-contacts-country {
+    font-size: 1.5rem;
+    color: var(--main-accent-color);
+    text-align: right;
+    margin-right: 5px;
+  }
+}

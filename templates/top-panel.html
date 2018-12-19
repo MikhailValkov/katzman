@@ -1,0 +1,20 @@
+{{ define "topPanel" }}
+
+<div class="top-panel-root">
+  <div class="top-panel-logo" onclick="location.href='/';"></div>
+  <div class="top-panel-buttons">
+    <button id="about-btn" class="top-panel-button" onclick="showAbout();">
+      Наши контакты
+    </button>
+    <button class="top-panel-button">Калькулятор цен</button>
+    <button class="top-panel-button top-panel-button-akcent">
+      Заказать замер
+    </button>
+  </div>
+  <div class="top-panel-contacts">
+    <span class="top-panel-contacts-country"> Белгородская область </span>
+    <span class="top-panel-contacts-phone"> +7(4722) 41-55-33 </span>
+  </div>
+</div>
+
+{{ end }}
