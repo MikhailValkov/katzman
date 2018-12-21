@@ -4,11 +4,10 @@
   position: absolute;
   left: -100vw;
   top: 0;
-  transition: 0.4s ease-in-out;
-  background-color: rgba(255, 255, 255, 0.952);
+  transition: 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 1);
   z-index: 10000;
 }
-
 .about-us-panel-root {
   width: 100%;
   background-image: url("/assets/img/top_panel.jpg");
@@ -18,12 +17,25 @@
   height: 55px;
   box-shadow: 0 0 15px;
 }
-
+.about-us-panel-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  float: left;
+  padding-left: 20px;
+}
+.about-us-panel-title p {
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+}
 .about-us-panel-button {
   width: 200px;
-  height: 40px;
-  margin-right: 15px;
-  margin-top: -3px;
+  height: 35px;
+  margin: 10px 15px 10px 0px;
+  /* margin-right: 15px;
+  margin-top: -3px; */
   font-size: 1.5rem;
   font-weight: bold;
   border: 0;
@@ -50,26 +62,37 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transform: scale(0.71);
+}
+.about-qualities-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
 }
 .about-qualities-text {
   font-size: 2.5rem;
-  margin: 15px 0px 15px 0;
   padding: 10px;
 }
-
 .about-contacts-block {
   display: flex;
   flex-direction: column;
-  width: 48%;
+  justify-content: space-between;
+  width: 50%;
   height: 100%;
+  /* background-color: blue; */
+  transform: scale(0.71);
 }
 .about-contacts-content {
-  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30%;
   width: 100%;
+  margin-bottom: 100px;
 }
 .about-map {
   width: 100%;
-  height: 48%;
-  margin-bottom: 15px;
-  /* box-shadow: 0 0 5px black; */
+  height: 70%;
+  /* margin-bottom: 15px; */
+  /* transform: scale(0.8); */
 }
