@@ -17,6 +17,8 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 		"templates/top-panel.html",
 		"templates/main-content.html",
 		"templates/about.html",
+		"templates/calc.html",
+		"templates/call.html",
 	)
 
 	if err := tmpl.Execute(w, nil); err != nil {

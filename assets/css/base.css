@@ -3,6 +3,8 @@
 @import "top-panel.css";
 @import "main-content.css";
 @import "about.css";
+@import "calc.css";
+@import "call.css";
 
 :root {
   --main-bg1-color: #262626;

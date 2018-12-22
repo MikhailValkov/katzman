@@ -6,8 +6,8 @@
     <button id="about-btn" class="top-panel-button" onclick="showAbout();">
       Наши контакты
     </button>
-    <button class="top-panel-button">Калькулятор цен</button>
-    <button class="top-panel-button top-panel-button-akcent">
+    <button class="top-panel-button" onclick="showCalc();">Калькулятор цен</button>
+    <button class="top-panel-button top-panel-button-akcent" onclick="showCall();">
       Заказать замер
     </button>
   </div>
@@ -16,5 +16,7 @@
     <span class="top-panel-contacts-phone"> +7(4722) 41-55-33 </span>
   </div>
 </div>
-
+{{ template "about" }}
+{{ template "calc" }}
+{{ template "call" }}
 {{ end }}
