@@ -50,3 +50,12 @@
     cursor: pointer;
     box-shadow: 0 0 25px var(--main-accent-color);
   }
+
+  .calc-body-title {
+    font-size: 3rem;
+    /* font-weight: bold; */
+    text-align: center;
+    margin: 10%;
+    transform: scale(0.8);
+
+  }
