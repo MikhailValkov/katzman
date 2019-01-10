@@ -7,13 +7,13 @@ import (
 	"github.com/meehalkoff/loggi"
 )
 
-func IndexHandler(w http.ResponseWriter, r *http.Request) {
+func MokrijFasadHandler(w http.ResponseWriter, r *http.Request) {
 
-	tmpl := template.New("index")
+	tmpl := template.New("mokrij-fasad")
 	tmpl.ParseFiles(
 		"templates/header.html",
-		"templates/index.html",
 		"templates/footer.html",
+		"templates/mokrij-fasad/index.html",
 		// "templates/main-content.html",
 		"templates/top-panel/top-panel.html",
 		"templates/top-panel/about.html",
