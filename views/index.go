@@ -16,6 +16,7 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 		"templates/footer.html",
 		// "templates/main-content.html",
 		"templates/top-panel/top-panel.html",
+		"templates/top-panel/main-menu.html",
 		"templates/top-panel/about.html",
 		"templates/top-panel/calc.html",
 		"templates/top-panel/call.html",

@@ -15,7 +15,7 @@
   /* свойства логотипа верхней панели */
   .top-panel-logo {
     height: 100%;
-    width: 25%;
+    width: 20%;
     background-image: url("/assets/img/logo.png");
     background-position: center center;
     background-size: contain;
@@ -33,14 +33,14 @@
   /* свойства контейнера для кнопок */
   .top-panel-buttons {
     height: 100%;
-    width: 50%;
+    width: 55%;
     float: left;
     display: flex;
     justify-content: space-evenly;
   }
   /* свойства обычной кнопки */
   .top-panel-button {
-    width: 30%;
+    width: 22%;
     margin: 10px 0px 10px 0px;
     font-size: 1.5rem;
     font-weight: bold;

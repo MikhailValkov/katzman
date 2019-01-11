@@ -5,6 +5,9 @@
 @import "about.css";
 @import "calc.css";
 @import "call.css";
+@import "mokrij-fasad/vid.css";
+@import "control-panel.css";
+@import "main-menu.css";
 
 :root {
   --main-bg1-color: #262626;

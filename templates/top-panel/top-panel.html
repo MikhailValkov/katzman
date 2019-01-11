@@ -3,10 +3,15 @@
 <div class="top-panel-root">
   <div class="top-panel-logo" onclick="location.href='/';"></div>
   <div class="top-panel-buttons">
-    <button id="about-btn" class="top-panel-button" onclick="showAbout();">
-      Наши контакты
+    <button class="top-panel-button" onclick="showMainMenu();">
+      Меню
     </button>
-    <button class="top-panel-button" onclick="showCalc();">Калькулятор цен</button>
+    <button id="about-btn" class="top-panel-button" onclick="showAbout();">
+      Контакты
+    </button>
+    <button class="top-panel-button" onclick="showCalc();">
+      Калькулятор
+    </button>
     <button class="top-panel-button top-panel-button-akcent" onclick="showCall();">
       Заказать замер
     </button>
@@ -19,4 +24,5 @@
 {{ template "about" }}
 {{ template "calc" }}
 {{ template "call" }}
+{{ template "main-menu" }}
 {{ end }}

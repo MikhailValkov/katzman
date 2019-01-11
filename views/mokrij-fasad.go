@@ -13,12 +13,14 @@ func MokrijFasadHandler(w http.ResponseWriter, r *http.Request) {
 	tmpl.ParseFiles(
 		"templates/header.html",
 		"templates/footer.html",
-		"templates/mokrij-fasad/index.html",
-		// "templates/main-content.html",
 		"templates/top-panel/top-panel.html",
 		"templates/top-panel/about.html",
 		"templates/top-panel/calc.html",
 		"templates/top-panel/call.html",
+		"templates/top-panel/main-menu.html",
+		"templates/control-panel.html",
+		"templates/mokrij-fasad/index.html",
+		"templates/mokrij-fasad/vid-pokritij.html",
 	)
 
 	if err := tmpl.Execute(w, nil); err != nil {
