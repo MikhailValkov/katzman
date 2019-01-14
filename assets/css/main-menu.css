@@ -1,56 +1,66 @@
 .main-menu-root {
-    height: calc(100vh-110px);
-    width: 30vw;
     position: fixed;
+    width: 40vw;
+    height: calc(100vh - 110px);
+    background-image: url("/assets/img/top_panel.jpg");
+    left: -100vw;
+    top: 55px;
+    z-index: 10001;
+    transition: 0.3s ease-in-out;
     display: flex;
     flex-direction: row;
-    left: -100vw;
-    /* margin-top: 55px; */
-    /* top: 0; */
-    transition: 0.3s ease-in-out;
-    background-color: rgba(255, 255, 255, 1);
-    z-index: 10009;
+    justify-content: space-evenly;
+    /* background-color: var(--main-bg2-color); */
+    box-shadow: 0 0 10px black;
 }
 
 .main-menu-col {
-    width: 50%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: red;
+    height: 100%;
+    width: 47%;
 }
 
 .main-menu-item {
-    height: 25%;
     width: 100%;
-    /* width: calc(25% - 30px); */
-    box-shadow: 0 0 5px var(--main-bg1-color);
-    /* position: relative; */
+    height: 23%;
+    position: relative;
+    /* transform: scale(0.95); */
+    box-shadow: 0 0 10px black;
     transition: 0.3s ease-in-out;
-    perspective: 1000px;
+  perspective: 1000px;
+  /* overflow: hidden; */
+    }
+
+.main-menu-item:hover {
+    /* transform: translate3d(-5px, -5px, -5px); */
+  box-shadow: 0 0 25px var(--main-accent-color);
+  /* border-radius: 10px; */
+  cursor: pointer;
+  /* transform: scale(1.02); */
 }
 
 .main-menu-item img {
     max-width: 100%;
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  object-fit: cover;
 }
 
 .main-menu-item p {
-    /* .centered { */
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--main-bg1-color);
-    width: 100%;
-    min-height: 60px;
-    font-size: 1.5rem;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.75);
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--main-bg1-color);
+  width: 100%;
+  min-height: 4rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
