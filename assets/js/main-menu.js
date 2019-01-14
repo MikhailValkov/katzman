@@ -10,6 +10,6 @@ function closeMainMenu() {
   let menuBlock = document.getElementById("main-menu");
   let menuButton = document.getElementById("menu-button");
   menuBlock.style.left = "-100vw";
-  menuButton.innerHTML = "Меню";
+  menuButton.innerHTML = "Материалы";
   menuButton.onclick = showMainMenu;
 }
