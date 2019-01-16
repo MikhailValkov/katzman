@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    position: absolute;
     /* background-color: beige; */
     transform: scale(0.9);
     /* display: none; */

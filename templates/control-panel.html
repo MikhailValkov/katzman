@@ -1,13 +1,14 @@
 {{ define "control-panel" }}
 <div class="control-root">
     <div class="control-button">
-        <button id="control-prev"> << На главную страницу</button>
+        <button id="control-prev" onclick="prevSlide();"><div class="control-prev-arrow">◀◀</div></button>
     </div>
     <div class="control-text">
-        <p id="control-text">Мокрый фасад: виды покрытий</p>
+        <p id="control-text"></p>
     </div>
     <div class="control-button">
-        <button id="control-next">Перейти к палитре цветов >> </button>
+        <button id="control-next" onclick="nextSlide();"><div class="control-next-arrow">▶▶</div></button>
     </div>
 </div>
+<script src="/assets/js/control-panel.js"></script>
 {{ end }}

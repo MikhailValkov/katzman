@@ -6,6 +6,8 @@
     /* width: 100%; */
     overflow: hidden;
     /* height: 100%; */
+    position: absolute;
+    bottom: 0px;
     object-fit: cover;
     height: 55px;
     box-shadow: 0 0 15px;
@@ -20,10 +22,11 @@
     width: 40%;
 }
 .control-text p {
-    font-size: 2rem;
+  font-size: 2rem;
   color: rgba(255, 255, 255, 0.9);
   font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .control-button {
@@ -45,10 +48,22 @@
     float: right;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in;
     box-shadow: 0 0 5px var(--main-bg2-color);
   }
   .control-root button:hover {
     cursor: pointer;
     box-shadow: 0 0 25px var(--main-accent-color);
+  }
+
+  .control-prev-arrow {
+      float: left;
+      /* margin-right: 1em; */
+  }
+  .control-next-arrow {
+      float: right;
+  }
+
+  #control-prev {
+      visibility: hidden;
   }
