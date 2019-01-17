@@ -8,6 +8,7 @@
     /* background-color: beige; */
     transform: scale(0.9);
     /* display: none; */
+    transition: 0.5s ease-in-out;
   }
 
   .vid-root-col {

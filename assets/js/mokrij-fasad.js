@@ -1,6 +1,6 @@
 var nextArrow = '<div class="control-next-arrow">▶▶</div>';
 var prevArrow = '<div class="control-prev-arrow">◀◀</div>';
-var maxSlidePosition = 8;
+var maxSlidePosition = 2;
 
 var control = {
     0 : {

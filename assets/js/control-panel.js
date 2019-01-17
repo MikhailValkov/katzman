@@ -9,8 +9,12 @@ prev.innerHTML = control[0].prev;
 
 function nextSlide() {
     if (currentSlide < maxSlidePosition) {
-        var slide = document.getElementById(control[currentSlide].id)
-        slide.style.left = "-100vw",
+        
+        var cslide = document.getElementById(control[currentSlide].id);
+        cslide.style.left = "-100vw";
+        var nslide = document.getElementById(control[currentSlide + 1].id);
+        nslide.style.left = "0px";
+
         prev.innerHTML = control[currentSlide + 1].prev;
         title.innerHTML = control[currentSlide + 1].title;
         if (currentSlide + 1 === maxSlidePosition) {
@@ -27,6 +31,11 @@ function nextSlide() {
 
 function prevSlide() {
     if (currentSlide > 0) {
+        var cslide = document.getElementById(control[currentSlide].id);
+        cslide.style.left = "-100vw";
+        var nslide = document.getElementById(control[currentSlide - 1].id);
+        nslide.style.left = "0px";
+
         if (currentSlide - 1 === 0) {
             prev.style.visibility = "hidden";
         } else {
