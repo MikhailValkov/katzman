@@ -1,0 +1,31 @@
+.otkos-root {
+    height: calc(100vh - 110px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    /* background-color: rgb(34, 109, 5); */
+    transform: scale(0.9);
+    left: -100vw;
+    transition: 0.5s ease-in-out;
+    /* box-shadow: 0 0 5px black; */
+}
+
+.otkos-root p {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.otkos-img-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.otkos-img-wrapper img {
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+    box-shadow: 0 0 5px black;
+}

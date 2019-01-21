@@ -23,6 +23,9 @@ func MokrijFasadHandler(w http.ResponseWriter, r *http.Request) {
 		"templates/mokrij-fasad/vid-pokritij.html",
 		"templates/mokrij-fasad/palitra.html",
 		"templates/mokrij-fasad/plus-minus.html",
+		"templates/mokrij-fasad/schema.html",
+		"templates/mokrij-fasad/otkos.html",
+		"templates/mokrij-fasad/portfolio.html",
 	)
 
 	if err := tmpl.Execute(w, nil); err != nil {
