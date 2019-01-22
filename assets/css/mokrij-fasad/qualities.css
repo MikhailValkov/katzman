@@ -3,9 +3,9 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: absolute;
-    background-color: rgb(37, 65, 189);
+    /* background-color: rgb(37, 65, 189); */
     transform: scale(0.9);
     left: -100vw;
     transition: 0.5s ease-in-out;
