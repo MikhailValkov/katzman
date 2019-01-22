@@ -1,0 +1,13 @@
+.video-root {
+    height: calc(100vh - 110px);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    background-color: rgb(189, 189, 37);
+    transform: scale(0.9);
+    left: -100vw;
+    transition: 0.5s ease-in-out;
+    /* display: none; */
+  }
