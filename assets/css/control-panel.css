@@ -59,7 +59,7 @@
   }
   .control-root button:hover {
     cursor: pointer;
-    box-shadow: 0 0 15px var(--main-bg1-color);
+    box-shadow: 0 0 7px var(--main-bg1-color);
   }
 
   .control-prev-arrow {

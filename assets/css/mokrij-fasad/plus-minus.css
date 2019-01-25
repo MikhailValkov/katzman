@@ -25,9 +25,27 @@
 .plus-minus-row ul {
     width: 45%;
     font-size: 2rem;
+    padding: 2rem;
+    /* border-radius: 5px; */
 }
 
 .plus-minus-row li {
     margin-bottom: 1em;
+    margin-left: 2rem;
+}
+
+.plus-minus-green {
+    /* background-color: rgba(115, 255, 0, 0.2); */
+    border-style: groove;
+    border-top-color: green;
+    border-top-width: 5px;
+}
+
+.plus-minus-red {
+    /* background-color: rgba(255, 0, 0, 0.2); */
+    /* border-top: 5px red; */
+    border-style: groove;
+    border-top-color: red;
+    border-top-width: 5px;
 }
 

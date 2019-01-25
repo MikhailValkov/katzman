@@ -11,3 +11,10 @@
     transition: 0.5s ease-in-out;
     /* display: none; */
   }
+
+.video-youtube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* transform: scale(0.9); */
+}
