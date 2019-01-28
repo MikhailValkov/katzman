@@ -1,4 +1,11 @@
 .otkos-root {
     /* left: 0; */
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.otkos-root img {
+    height: 100%;
 }
