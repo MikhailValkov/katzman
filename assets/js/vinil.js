@@ -68,11 +68,11 @@ var control = {
 var maxPortfolioPosition = 6;
 
 var portfolio = {
-    0: 'url(/assets/img/mokrij-fasad/portfolio/0.jpg)',
-    1: 'url(/assets/img/mokrij-fasad/portfolio/1.jpg)',
-    2: 'url(/assets/img/mokrij-fasad/portfolio/2.jpg)',
-    3: 'url(/assets/img/mokrij-fasad/portfolio/3.jpg)',
-    4: 'url(/assets/img/mokrij-fasad/portfolio/4.jpg)',
-    5: 'url(/assets/img/mokrij-fasad/portfolio/5.jpg)',
-    6: 'url(/assets/img/mokrij-fasad/portfolio/6.jpg)',
+    0: 'url(/assets/img/vinil/portfolio/0.jpg)',
+    1: 'url(/assets/img/vinil/portfolio/1.jpg)',
+    2: 'url(/assets/img/vinil/portfolio/2.jpg)',
+    3: 'url(/assets/img/vinil/portfolio/3.jpg)',
+    4: 'url(/assets/img/vinil/portfolio/4.jpg)',
+    5: 'url(/assets/img/vinil/portfolio/5.jpg)',
+    6: 'url(/assets/img/vinil/portfolio/6.jpeg)',
 }

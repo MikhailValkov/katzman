@@ -1,5 +1,11 @@
 {{ define "portfolio" }}
 <div id="portfolio" class="slide-root portfolio-root">
-блок с описанием
+    <div class="portfolio-slide-control portfolio-btn-prev" onclick="portfolioPrevSlide();">
+        <div class="portfolio-arrow-left"></div>
+    </div>
+    <div class="portfolio-slide-control portfolio-btn-next" onclick="portfolioNextSlide();">
+        <div class="portfolio-arrow-right"></div>
+    </div>
 </div>
+<script src="/assets/js/portfolio.js"></script>
 {{ end }}
