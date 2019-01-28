@@ -1,4 +1,7 @@
 .video-root {
     /* left: 0; */
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
