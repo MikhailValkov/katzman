@@ -7,6 +7,9 @@ next.innerHTML = control[0].next;
 title.innerHTML = control[0].title;
 prev.innerHTML = control[0].prev;
 
+// var startSlide = document.getElementById(control[0].id);
+// startSlide.style.left = "0px;"
+
 function nextSlide() {
     if (currentSlide < maxSlidePosition) {
         

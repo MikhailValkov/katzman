@@ -1,0 +1,20 @@
+@import "/assets/css/vinil/summary.css";
+@import "/assets/css/vinil/palitra.css";
+@import "/assets/css/vinil/kachestva.css";
+@import "/assets/css/vinil/schema.css";
+@import "/assets/css/vinil/otkos.css";
+@import "/assets/css/vinil/portfolio.css";
+@import "/assets/css/vinil/video.css";
+@import "/assets/css/vinil/promo.css";
+@import "/assets/css/vinil/qualities.css";
+@import "/assets/css/vinil/we-work.css";
+
+.slide-root {
+    height: calc(100vh - 120px);
+    width: 100%;
+    position: absolute;
+    transform: scale(0.9);
+    transition: 0.5s ease-in-out;
+    left: -100vw;
+}
+
