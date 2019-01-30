@@ -1,0 +1,26 @@
+.summary-root {
+    /* left: 0px; */
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.summary-row {
+    /* background-color: greenyellow; */
+    height: 48%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.summary-row p {
+    font-size: 2rem;
+    width: 48%;
+}
+
+.summary-row img {
+    width: 48%;
+    overflow: hidden;
+    box-shadow: 0 0 2px black;
+}
