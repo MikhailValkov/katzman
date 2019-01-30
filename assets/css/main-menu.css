@@ -1,7 +1,7 @@
 .main-menu-root {
     position: fixed;
-    width: 40vw;
-    height: calc(100vh - 110px);
+    width: 45vw;
+    height: calc(100vh - 55px);
     background-image: url("/assets/img/top_panel.jpg");
     left: -100vw;
     top: 55px;
