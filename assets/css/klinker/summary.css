@@ -21,6 +21,8 @@
 
 .summary-row img {
     width: 48%;
+    height: auto;
     overflow: hidden;
+    object-fit: cover;
     box-shadow: 0 0 2px black;
 }
