@@ -10,3 +10,20 @@
     height: 90%;
     overflow: hidden;
 }
+
+.otkos-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.otkos-text-wrapper p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.otkos-text-wrapper ol {
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+}
