@@ -23,4 +23,5 @@
     width: 48%;
     overflow: hidden;
     box-shadow: 0 0 2px black;
+    object-fit: cover;
 }
