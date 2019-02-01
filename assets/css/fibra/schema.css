@@ -1,0 +1,18 @@
+.schema-root {
+    /* left: 0; */
+    /* background-color: burlywood; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.schema-root img {
+    height: 100%;
+    /* height: auto; */
+    overflow: hidden;
+}
+
+.schema-root p {
+    font-size: 3rem;
+    width: 30%;
+}
