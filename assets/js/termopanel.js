@@ -65,7 +65,7 @@ var control = {
     },
 }
 
-var maxPortfolioPosition = 7;
+var maxPortfolioPosition = 5;
 
 var portfolio = {
     0: 'url(/assets/img/termopanel/portfolio/0.jpg)',
@@ -74,6 +74,6 @@ var portfolio = {
     3: 'url(/assets/img/termopanel/portfolio/3.jpg)',
     4: 'url(/assets/img/termopanel/portfolio/4.jpg)',
     5: 'url(/assets/img/termopanel/portfolio/5.jpg)',
-    6: 'url(/assets/img/termopanel/portfolio/6.jpg)',
-    7: 'url(/assets/img/termopanel/portfolio/7.jpg)',
+    // 6: 'url(/assets/img/termopanel/portfolio/6.jpg)',
+    // 7: 'url(/assets/img/termopanel/portfolio/7.jpg)',
 }
