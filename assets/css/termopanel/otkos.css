@@ -1,0 +1,15 @@
+.otkos-root {
+    /* left: 0; */
+    /* background-color: greenyellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.otkos-root img {
+    height: 90%;
+    overflow: hidden;
+    object-fit: cover;
+    box-shadow: 0 0 2px black;
+    margin: 10px;
+}

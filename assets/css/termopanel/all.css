@@ -1,0 +1,20 @@
+@import "/assets/css/termopanel/summary.css";
+@import "/assets/css/termopanel/palitra.css";
+@import "/assets/css/termopanel/kachestva.css";
+@import "/assets/css/termopanel/schema.css";
+@import "/assets/css/termopanel/otkos.css";
+@import "/assets/css/termopanel/portfolio.css";
+@import "/assets/css/termopanel/video.css";
+@import "/assets/css/termopanel/promo.css";
+@import "/assets/css/termopanel/qualities.css";
+@import "/assets/css/termopanel/we-work.css";
+
+.slide-root {
+    height: calc(100vh - 120px);
+    width: 100%;
+    position: absolute;
+    transform: scale(0.9);
+    transition: 0.5s ease-in-out;
+    left: -100vw;
+}
+
