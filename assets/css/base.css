@@ -27,3 +27,31 @@
     /* background-image: url("https://www.croatiaweek.com/wp-content/uploads/2018/11/pexels-photo-209839.jpeg?x46277"); */
   }
 }
+
+@media(min-width: 1600px) {
+  html {
+    font-size: 72%;
+    font-family: "Exo 2", sans-serif;
+  }
+  body {
+    height: 100vh;
+    padding: 0;
+    margin: 0 auto;
+    background-color: var(--main-bg2-color);
+    /* background-image: url("https://www.croatiaweek.com/wp-content/uploads/2018/11/pexels-photo-209839.jpeg?x46277"); */
+  }
+}
+
+@media(min-width: 1900px) {
+  html {
+    font-size: 85%;
+    font-family: "Exo 2", sans-serif;
+  }
+  body {
+    height: 100vh;
+    padding: 0;
+    margin: 0 auto;
+    background-color: var(--main-bg2-color);
+    /* background-image: url("https://www.croatiaweek.com/wp-content/uploads/2018/11/pexels-photo-209839.jpeg?x46277"); */
+  }
+}
