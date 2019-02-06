@@ -42,7 +42,7 @@
 .main-content-block p {
   /* .centered { */
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--main-bg1-color);
@@ -53,6 +53,7 @@
   background-color: rgba(255, 255, 255, 0.75);
   padding-top: 5px;
   padding-bottom: 5px;
+  box-shadow: 0 0 2px black inset;
 }
 
 .main-content-promo{
