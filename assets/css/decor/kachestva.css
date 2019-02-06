@@ -1,0 +1,23 @@
+.kachestva-root {
+    /* left: 0; */
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kachestva-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.kachestva-row ul {
+    width: 48%;
+    height: 100%;
+    font-size: 2rem;
+}
+
+.kachestva-row li {
+    margin-bottom: 2em;
+}

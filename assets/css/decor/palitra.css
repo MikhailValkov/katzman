@@ -1,0 +1,18 @@
+.palitra-root {
+    /* left: 0; */
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.palitra-root img {
+    height: 100%;
+    /* height: auto; */
+    overflow: hidden;
+}
+
+.palitra-root p {
+    font-size: 3rem;
+    width: 30%;
+}

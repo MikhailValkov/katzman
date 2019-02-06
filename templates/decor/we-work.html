@@ -1,0 +1,40 @@
+{{ define "we-work" }}
+<div id="we-work" class="we-work-root">
+    <div class="call-howwork">
+        <div class="call-howwork-title">Как мы работаем:</div>
+        <div class="call-howwork-text">
+            • Закажите звонок или приезжайте в офис.
+        </div>
+        <div class="call-howwork-text">
+            • Наш менеджер выезжает на бесплатный замер.
+        </div>
+        <div class="call-howwork-text">
+            • Рассчитываем стоимость материалов и работ.
+        </div>
+        <div class="call-howwork-text">• Согласовываем и заключаем договор.</div>
+        <div class="call-howwork-text">
+            • Завозим материалы и выполняем работы.
+        </div>
+        <div class="call-howwork-text">• Принимаете обновленный дом.</div>
+    </div>
+    <div class="call-need-call-root">
+        <div class="call-howwork-title">Заказать звонок:</div>
+        <!-- <span class="title">Авторизация</span> -->
+        <div class="call-need-field">
+            <label class="call-need-label" for="call-name">Как к Вам обращаться?</label>
+            <input class="call-need-input" id="call-name" type="text" />
+        </div>
+        <div class="call-need-field">
+            <label class="call-need-label" for="call-email">Напишите Вашу электронную почту:</label>
+            <input class="call-need-input" id="call-email" type="call-email" />
+        </div>
+        <div class="call-need-field">
+            <label class="call-need-label" for="call-phone">На какой номер перезвонить?</label>
+            <input class="call-need-input" id="call-phone" type="text" />
+        </div>
+        <button id="send" type="submit" class="call-need-send" onclick="loginValidate()">
+            Отправить
+        </button>
+    </div>
+</div>
+{{ end }}
