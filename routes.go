@@ -19,7 +19,7 @@ func GetRoutes() *http.ServeMux {
 	mux.HandleFunc("/клинкерная-плитка", Chain(views.KlinkerHandler, Method("GET"), Logging()))
 	mux.HandleFunc("/термопанели", Chain(views.TermopanelHandler, Method("GET"), Logging()))
 	mux.HandleFunc("/декоративные-элементы", Chain(views.DecorHandler, Method("GET"), Logging()))
-	// mux.HandleFunc("/admin", Chain(views.GetCalcData, Method("GET"), Logging(), SessionChecker()))
+	mux.HandleFunc("/технониколь-хауберг", Chain(views.HaubergHandler, Method("GET"), Logging()))
 
 	mux.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("assets/"))))
 	return mux
