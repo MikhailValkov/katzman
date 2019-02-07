@@ -64,7 +64,7 @@
   justify-content: center;
   box-shadow: 0 0 5px black;
 
-  background: linear-gradient(0deg,var(--main-bg2-color), var(--main-accent-color), var(--main-bg2-color));
+  background: linear-gradient(0deg,var(--main-bg2-color), #9ff37e , var(--main-bg2-color));
 background-size: 600% 600%;
 -webkit-animation: AnimatePromo 11s ease infinite;
 -moz-animation: AnimatePromo 11s ease infinite;

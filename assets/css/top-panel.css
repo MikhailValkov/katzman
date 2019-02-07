@@ -3,20 +3,21 @@
   .top-panel-root {
     width: 100%;
     /* background-color: var(--main-bg1-color); */
-    background-image: url("/assets/img/top_panel.jpg");
+    /* background-image: url("/assets/img/top_panel.jpg"); */
+    background: linear-gradient(0deg,rgb(206, 204, 204),rgb(255, 255, 255));
     max-width: 100%;
     /* width: 100%; */
     overflow: hidden;
     /* height: 100%; */
     object-fit: cover;
     height: 55px;
-    box-shadow: 0 0 15px;
+    box-shadow: 0 4px 5px -2px;
   }
   /* свойства логотипа верхней панели */
   .top-panel-logo {
     height: 100%;
     width: 20%;
-    background-image: url("/assets/img/logo.png");
+    background-image: url("/assets/img/logo3.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -46,19 +47,29 @@
     margin: 10px 0px 10px 0px;
     font-size: 1.5rem;
     font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 0;
-    border-radius: 2px;
+
+    background: linear-gradient(180deg, #f9f9f9 0%, #e0e0e0 100%);
+    border-radius: 3px;
+    border: 0.5px solid rgba(0%, 0%, 0%, 0.2);
+    border-width: 0.5px 0.5px 0.5px 0.5px;
+    box-shadow: 0px 1px 1px rgba(0%, 0%, 0%, 0.6), 0px 0px 5px rgba(255, 255, 255, 1), 0px 1px 0px 3px rgba(0, 0, 0, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 1);
+
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* border: 0; */
+    /* border-radius: 2px; */
     transition: 0.5s ease-in-out;
-    box-shadow: 0 0 5px var(--main-bg2-color);
+    /* box-shadow: 0 0 5px var(--main-bg2-color); */
   }
   .top-panel-button:hover {
     cursor: pointer;
-    box-shadow: 0 0 25px var(--main-accent-color);
-  }
+    background: linear-gradient(90deg, #f9f9f9 0%, #9ff37e 100%);
+    /* font-size: 2rem; */
+    /* box-shadow: 0 0 25px var(--main-accent-color); */
+    /* transform: scale(1.05); */
+    }
   /* свойства привлекающей кнопки */
   .top-panel-button-akcent {
-    box-shadow: 0 0 10px var(--main-accent-color);
+    /* box-shadow: 0 0 10px var(--main-accent-color); */
     background-color: var(--main-accent-color);
     border: 0;
     border-radius: 2px;

@@ -16,7 +16,8 @@
     overflow: hidden;
     object-fit: cover;
     height: 55px;
-    box-shadow: 0 0 15px;
+    /* box-shadow: 0 0 15px; */
+    box-shadow: 0 4px 5px -2px;
   }
   .calc-panel-title {
     display: flex;

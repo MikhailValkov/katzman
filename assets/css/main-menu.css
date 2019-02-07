@@ -2,7 +2,8 @@
     position: fixed;
     width: 45vw;
     height: calc(100vh - 55px);
-    background-image: url("/assets/img/top_panel.jpg");
+    /* background-image: url("/assets/img/top_panel.jpg"); */
+    background: linear-gradient(0deg,rgb(206, 204, 204),rgb(255, 255, 255));
     left: -100vw;
     top: 55px;
     z-index: 10001;
@@ -11,7 +12,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     /* background-color: var(--main-bg2-color); */
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 5px black inset;
 }
 
 .main-menu-col {
