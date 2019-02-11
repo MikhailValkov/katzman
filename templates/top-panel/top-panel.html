@@ -3,21 +3,30 @@
 <div class="top-panel-root">
   <div class="top-panel-logo" onclick="location.href='/';"></div>
   <div class="top-panel-buttons">
-    <button id="menu-button" class="top-panel-button" onclick="showMainMenu();">
-      Материалы
-    </button>
-    <button class="top-panel-button" onclick="showCalc();">
-      Калькулятор
-    </button>
-    <button id="about-btn" class="top-panel-button" onclick="showAbout();">
-        Контакты
-      </button>
-    <!-- <button class="top-panel-button top-panel-button-akcent" onclick="showCall();">
-      Заказать замер
-    </button> -->
-    <button class="top-panel-button" onclick="showCall();">
-      Заказать замер
-    </button>
+    <div id="menu-button" class="top-panel-button" onclick="showMainMenu();">
+      <img src="/assets/img/icon-documents.png">
+      <div class="top-panel-button-text">
+        <p>Материалы</p>
+      </div>
+    </div>
+    <div class="top-panel-button" onclick="showCalc();">
+      <img src="/assets/img/icon-calc.png">
+      <div class="top-panel-button-text">
+        <p>Калькулятор</p>
+      </div>
+    </div>
+    <div id="about-btn" class="top-panel-button" onclick="showAbout();">
+      <img src="/assets/img/icon-call.png">
+      <div class="top-panel-button-text">
+        <p>Контакты</p>
+      </div>
+    </div>
+    <div class="top-panel-button" onclick="showCall();">
+      <img src="/assets/img/icon-rulet.png">
+      <div class="top-panel-button-text">
+        <p>Заказать замер</p>
+      </div>
+    </div>
   </div>
   <div class="top-panel-contacts">
     <span class="top-panel-contacts-country"> Белгородская область </span>
