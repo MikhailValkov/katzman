@@ -1,5 +1,5 @@
 .main-content-container {
-  height: calc(100vh - 55px);
+  height: calc(100vh - 56px);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
 }
 .main-content-row {
   width: 100%;
-  height: calc(40% - 30px);
+  height: calc(45% - 30px);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -56,7 +56,7 @@
   box-shadow: 0 0 2px black inset;
 }
 
-.main-content-promo{
+/* .main-content-promo{
   width: 100%;
   height: 55px;
   display: flex;
@@ -92,4 +92,4 @@ animation: AnimatePromo 11s ease infinite;
   0%{background-position:45% 0%}
   50%{background-position:56% 100%}
   100%{background-position:45% 0%}
-}
+} */
