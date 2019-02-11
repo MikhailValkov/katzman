@@ -19,8 +19,8 @@
   width: calc(25% - 30px);
   box-shadow: 0 0 5px var(--main-bg1-color);
   position: relative;
-  transition: 0.3s ease-in-out;
-  perspective: 1000px;
+  transition: 0.1s ease-in-out;
+  /* perspective: 1000px; */
   overflow: hidden;
   border-radius: 5px;
 }
