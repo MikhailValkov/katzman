@@ -60,11 +60,11 @@
 }
   .top-panel-button:hover {
     cursor: pointer;
-    border-bottom: medium solid rgba(209, 98, 7, 0.9);
+    border-radius: 3px;
+    background-color: rgba(86, 190, 26, 0.2);
     }
   /* свойства привлекающей кнопки */
   .top-panel-button-akcent {
-    /* box-shadow: 0 0 10px var(--main-accent-color); */
     background-color: var(--main-accent-color);
     border: 0;
     border-radius: 2px;
