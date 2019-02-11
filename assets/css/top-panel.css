@@ -23,7 +23,6 @@
   .top-panel-logo:hover {
     cursor: pointer;
   }
-
   /* свойства контейнера для кнопок */
   .top-panel-buttons {
     height: 100%;
@@ -43,28 +42,25 @@
     flex-direction: row;
     justify-content: center;
   }
-
-.top-panel-button img {
-  height: 100%;
-  width: 25%;
-  object-fit: contain;
-  transform: scale(0.9);
-}
-.top-panel-button-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* flex: 1; */
-}
-.top-panel-button-text p {
-  text-align: center;
-  /* float: left; */
-}
+  .top-panel-button img {
+    height: 100%;
+    width: 25%;
+    object-fit: contain;
+    transform: scale(0.9);
+  }
+  .top-panel-button-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .top-panel-button-text p {
+    text-align: center;
+  }
   .top-panel-button:hover {
     cursor: pointer;
     border-radius: 3px;
     background-color: rgba(86, 190, 26, 0.2);
-    }
+  }
   /* свойства привлекающей кнопки */
   .top-panel-button-akcent {
     background-color: var(--main-accent-color);
@@ -83,7 +79,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
     transform: scale(0.8);
   }
   /* свойства строки с номером телефона */

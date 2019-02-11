@@ -1,58 +1,51 @@
 .main-menu-root {
-    position: fixed;
-    width: 100%;
-    height: calc(100vh - 56px);
-    /* background-image: url("/assets/img/top_panel.jpg"); */
-    /* background: linear-gradient(0deg,rgb(206, 204, 204),rgb(255, 255, 255)); */
-    left: -100vw;
-    top: 56px;
-    z-index: 10001;
-    transition: 0.3s ease-in-out;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    background-color: rgba(255, 255, 255, 0.85);
-    /* background-color: var(--main-bg2-color); */
-    /* box-shadow: 0 0 5px black inset; */
+  position: fixed;
+  width: 100%;
+  height: calc(100vh - 56px);
+  left: -100vw;
+  top: 56px;
+  z-index: 10001;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background-color: rgba(255, 255, 255, 0.85);
 }
+
 .main-menu-wrapper {
   width: 45%;
   height: 100%;
   display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: white;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: white;
 }
 
 .main-menu-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-    width: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 47%;
 }
 
 .main-menu-item {
-    width: 100%;
-    height: 23%;
-    position: relative;
-    transform: scale(0.95);
-    box-shadow: 0 0 5px black;
-    transition: 0.3s ease-in-out;
-    perspective: 1000px;
-  /* overflow: hidden; */
-    }
+  width: 100%;
+  height: 23%;
+  position: relative;
+  transform: scale(0.95);
+  box-shadow: 0 0 5px black;
+  transition: 0.3s ease-in-out;
+  perspective: 1000px;
+}
 
 .main-menu-item:hover {
-    /* transform: translate3d(-5px, -5px, -5px); */
   box-shadow: 0 0 15px var(--main-accent-color);
-  /* border-radius: 10px; */
   cursor: pointer;
-  /* transform: scale(1.02); */
 }
 
 .main-menu-item img {
-    max-width: 100%;
+  max-width: 100%;
   width: 100%;
   overflow: hidden;
   height: 100%;
@@ -60,7 +53,7 @@
 }
 
 .main-menu-item p {
-    position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
