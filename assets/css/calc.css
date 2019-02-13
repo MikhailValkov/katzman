@@ -58,6 +58,11 @@
   border: 2px solid rgba(50, 50, 50, 0.9);
   overflow: hidden;
   position: relative;
+  opacity: 0.7;
+}
+
+.calc-decor-btn:hover {
+  opacity: 1;
 }
 
 .calc-decor-btn img {
@@ -115,6 +120,11 @@
   border: 2px solid rgba(50, 50, 50, 0.9);
   overflow: hidden;
   position: relative;
+  opacity: 0.7;
+}
+
+.calc-warm-btn:hover {
+  opacity: 1;
 }
 
 .calc-warm-btn img {
@@ -132,6 +142,11 @@
   border: 2px solid rgba(50, 50, 50, 0.9);
   overflow: hidden;
   position: relative;
+  opacity: 0.7;
+}
+
+.calc-tol-btn:hover {
+  opacity: 1;
 }
 
 .calc-tol-btn img {
@@ -146,6 +161,9 @@
   transform: translate3d(-10px,-10px,0);
   transition: 0.1s ease-in-out;
   z-index: 1000;
+  opacity: 1;
+
+  /* border: 5px solid rgba(50, 50, 50, 0.9); */
   /* border: 1px solid darkgreen; */
 }
 

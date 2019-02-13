@@ -13,8 +13,17 @@ function press(btn) {
         allUnpress(btn.classList[0]);
         btn.classList.add("calc-btn-pressed");
         btn.pressed = true;
+        controlDepth(btn);
     } else {
         btn.classList.remove("calc-btn-pressed");
         btn.pressed = undefined;
+    }
+}
+
+function controlDepth(btn) {
+    var depth = document.getElementById("dnone");
+
+    if (btn.id === "nowarm") {
+        alert("no warm");
     }
 }
