@@ -2,10 +2,11 @@
 
 <div id="calc" class="calc-window-root">
   <div class="calc-wrapper">
-    <p class="calc-label">
-      Выберите вид декоративного покрытия:
-    </p>
+
     <div class="calc-decor-group">
+      <p class="calc-label">
+        Выберите вид декоративного покрытия:
+      </p>
       <div class=calc-decor-row>
         <div id="btn0" class="calc-decor-btn calc-btn-pressed" onclick="press(btn0);">
           <img src="/assets/img/calculator/0.jpg">
@@ -31,6 +32,8 @@
             Виниловый сайдинг
           </p>
         </div>
+      </div>
+      <div class=calc-decor-row>
         <div id="btn4" class="calc-decor-btn" onclick="press(btn4);">
           <img src="/assets/img/calculator/4.jpg">
           <p class="calc-decor-btn-label">
@@ -57,12 +60,12 @@
         </div>
       </div>
     </div>
-    <div class="calc-second-wrapper">
-      <div class="calc-warm-wrapper">
+    <div class="calc-row-group">
+      <div class="calc-warm-group">
         <p class="calc-label">
-          Выберите вид и толщину утеплителя:
+          Выберите вид утеплителя:
         </p>
-        <div class="calc-warm-group">
+        <div class="calc-warm-row">
           <div id="warm0" class="calc-warm-btn calc-btn-pressed" onclick="press(warm0);">
             <img src="/assets/img/calculator/1-0.jpg">
             <p class="calc-decor-btn-label">
@@ -75,6 +78,8 @@
               Пенопласт
             </p>
           </div>
+        </div>
+        <div class="calc-warm-row">
           <div id="warm2" class="calc-warm-btn" onclick="press(warm2);">
             <img src="/assets/img/calculator/1-2.jpg">
             <p class="calc-decor-btn-label">
@@ -88,32 +93,49 @@
             </p>
           </div>
         </div>
-        <div class="calc-warm-group">
-          <div id="tol0" class="calc-warm-btn calc-btn-pressed" style="visibility: hidden;" onclick="press(tol0);">
-            <img src="/assets/img/calculator/1-0.jpg">
+      </div>
+      <div class="calc-warm-group">
+        <p class="calc-label">
+          Выберите толщину утеплителя:
+        </p>
+        <div class="calc-warm-row">
+          <div id="tol0" class="calc-tol-btn calc-btn-pressed" onclick="press(tol0);">
+            <img src="/assets/img/calculator/tol0.jpg">
             <p class="calc-decor-btn-label">
               Без утеплителя
             </p>
           </div>
           <div id="tol1" class="calc-tol-btn" onclick="press(tol1);">
-            <img src="/assets/img/calculator/2-0.jpg">
+            <img src="/assets/img/calculator/tol1.jpg">
             <p class="calc-decor-btn-label">
               30 мм
             </p>
           </div>
+        </div>
+        <div class="calc-warm-row">
           <div id="tol2" class="calc-tol-btn" onclick="press(tol2);">
-            <img src="/assets/img/calculator/2-0.jpg">
+            <img src="/assets/img/calculator/tol2.jpg">
             <p class="calc-decor-btn-label">
               50 мм
             </p>
           </div>
           <div id="tol3" class="calc-tol-btn" onclick="press(tol3);">
-            <img src="/assets/img/calculator/2-0.jpg">
+            <img src="/assets/img/calculator/tol3.jpg">
             <p class="calc-decor-btn-label">
               100 мм
             </p>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="calc-input-group">
+      <div class="calc-input-col">
+        <p class="calc-input-p">Введите количество квадратов:</p>
+        <input class="calc-input-style" type="number" value="1">
+      </div>
+      <div class="calc-input-col">
+        <p class="calc-input-p">Итого в рублях:</p>
+        <input class="calc-input-style" type="text" value="0" readonly>
       </div>
     </div>
   </div>
