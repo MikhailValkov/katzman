@@ -63,9 +63,7 @@
   }
   /* свойства привлекающей кнопки */
   .top-panel-button-akcent {
-    background-color: var(--main-accent-color);
-    border: 0;
-    border-radius: 2px;
+    background-color: rgba(195, 7, 7, 0.2);
   }
   .top-panel-button-akcent:hover {
     box-shadow: 0 0 15px rgba(82, 224, 82, 0.904);

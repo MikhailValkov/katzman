@@ -200,5 +200,9 @@
 
 .calc-btn-disabled {
   opacity: 0.2;
-  cursor: wait;
+  cursor: default;
+}
+
+.calc-btn-disabled:hover {
+  opacity: 0.2;
 }

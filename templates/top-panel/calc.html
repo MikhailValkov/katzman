@@ -8,7 +8,7 @@
         Выберите вид декоративного покрытия:
       </p>
       <div class=calc-decor-row>
-        <div id="koroed" class="calc-decor-btn calc-btn-pressed" onclick="press(koroed);">
+        <div id="koroed" class="calc-decor-btn" onclick="press(koroed);">
           <img src="/assets/img/calculator/0.jpg">
           <p class="calc-decor-btn-label">
             Короед
@@ -66,7 +66,7 @@
           Выберите вид утеплителя:
         </p>
         <div class="calc-warm-row">
-          <div id="nowarm" class="calc-warm-btn calc-btn-pressed" onclick="press(nowarm);">
+          <div id="nowarm" class="calc-warm-btn" onclick="press(nowarm);">
             <img src="/assets/img/calculator/1-0.jpg">
             <p class="calc-decor-btn-label">
               Без утеплителя
@@ -94,7 +94,7 @@
           </div>
         </div>
       </div>
-      <div class="calc-warm-group">
+      <div id="calcDepth" class="calc-warm-group">
         <p class="calc-label">
           Выберите толщину утеплителя:
         </p>
@@ -125,11 +125,11 @@
     <div class="calc-input-group">
       <div class="calc-input-col">
         <p class="calc-input-p">Введите количество квадратов:</p>
-        <input class="calc-input-style" type="number" value="1">
+        <input id="squareInput" class="calc-input-style" type="number" value="1" oninput="checkInput(squareInput);">
       </div>
       <div class="calc-input-col">
         <p class="calc-input-p">Итого в рублях:</p>
-        <input class="calc-input-style" type="text" value="0" readonly>
+        <input id="calcSumma" class="calc-input-style" type="text" value="0" readonly>
       </div>
     </div>
   </div>
