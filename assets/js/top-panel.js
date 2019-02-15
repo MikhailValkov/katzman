@@ -17,12 +17,14 @@ function showMainMenu() {
     menuBlock.style.left = "0px";
     menuButton.innerHTML = '<img src="/assets/img/icon-close.png"><div class="top-panel-button-text"><p>Закрыть</p></div>';
     menuButton.onclick = closeMainMenu;
+    menuButton.classList.add("top-panel-button-akcent");
 }
 
 function closeMainMenu() {
     menuBlock.style.left = "-100vw";
     menuButton.innerHTML = '<img src="/assets/img/icon-documents.png"><div class="top-panel-button-text"><p>Материалы</p></div>';
     menuButton.onclick = showMainMenu;
+    menuButton.classList.remove("top-panel-button-akcent");
 }
 
 function showCalc() {
@@ -32,12 +34,14 @@ function showCalc() {
     calcBlock.style.left = "0px";
     calcButton.innerHTML = '<img src="/assets/img/icon-close.png"><div class="top-panel-button-text"><p>Закрыть</p></div>';
     calcButton.onclick = closeCalc;
+    calcButton.classList.add("top-panel-button-akcent");
 }
 
 function closeCalc() {
     calcBlock.style.left = "-100vw";
     calcButton.innerHTML = '<img src="/assets/img/icon-calc.png"><div class="top-panel-button-text"><p>Калькулятор</p></div>';
     calcButton.onclick = showCalc;
+    calcButton.classList.remove("top-panel-button-akcent");
 }
 
 function showAbout() {
@@ -47,13 +51,16 @@ function showAbout() {
     aboutBlock.style.left = "0px";
     aboutButton.innerHTML = '<img src="/assets/img/icon-close.png"><div class="top-panel-button-text"><p>Закрыть</p></div>';
     aboutButton.onclick = closeAbout;
+    aboutButton.classList.add("top-panel-button-akcent");
 }
 
 function closeAbout() {
     aboutBlock.style.left = "-100vw";
     aboutButton.innerHTML = '<img src="/assets/img/icon-call.png"><div class="top-panel-button-text"><p>Контакты</p></div>';
     aboutButton.onclick = showAbout;
+    aboutButton.classList.remove("top-panel-button-akcent");
 }
+
 function showCall() {
     closeMainMenu();
     closeCalc();
@@ -61,10 +68,12 @@ function showCall() {
     callBlock.style.left = "0px";
     callButton.innerHTML = '<img src="/assets/img/icon-close.png"><div class="top-panel-button-text"><p>Закрыть</p></div>';
     callButton.onclick = closeCall;
+    callButton.classList.add("top-panel-button-akcent");
 }
 
 function closeCall() {
     callBlock.style.left = "-100vw";
     callButton.innerHTML = '<img src="/assets/img/icon-rulet.png"><div class="top-panel-button-text"><p>Заказать замер</p></div>';
     callButton.onclick = showCall;
+    callButton.classList.remove("top-panel-button-akcent");
 }

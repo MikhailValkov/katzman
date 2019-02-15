@@ -2,7 +2,7 @@ var materials = {
     "decor": {
         "koroed": {
             "cost":100,
-            "job_cost": 100
+            "job_cost": 101
         },
         "mramor": {
             "cost": 200,
