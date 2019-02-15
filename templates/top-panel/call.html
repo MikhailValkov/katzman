@@ -30,20 +30,21 @@
       <!-- <span class="title">Авторизация</span> -->
       <div class="call-need-field">
         <label class="call-need-label" for="call-name">Как к Вам обращаться?</label>
-        <input class="call-need-input" id="call-name" type="text" />
+        <input class="call-need-input" id="call-name" type="text" placeholder="Иван" />
       </div>
       <div class="call-need-field">
         <label class="call-need-label" for="call-email">Напишите Вашу электронную почту:</label>
-        <input class="call-need-input" id="call-email" type="call-email" />
+        <input class="call-need-input" id="call-email" type="email" placeholder="ivan@mail.ru"/>
       </div>
       <div class="call-need-field">
         <label class="call-need-label" for="call-phone">На какой номер перезвонить?</label>
-        <input class="call-need-input" id="call-phone" type="text" />
+        <input class="call-need-input" id="call-phone" type="text" placeholder="89105554433"/>
       </div>
-      <button id="send" type="submit" class="call-need-send" onclick="loginValidate()">
+      <button id="call-send" type="submit" class="call-need-send" onclick="sendCallRequest();">
         Отправить
       </button>
     </div>
   </div>
 </div>
+<script src="/assets/js/call.js"></script>
 {{ end }}

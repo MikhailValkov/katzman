@@ -115,15 +115,19 @@
   margin: 10px;
 }
 
+.call-need-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .call-need-input {
   font-size: 3rem;
   border-radius: 5px;
   padding: 5px;
 }
 
-.call-need-field {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
+.call-need-input-error {
+  background: rgba(195, 7, 7, 0.2);
 }
