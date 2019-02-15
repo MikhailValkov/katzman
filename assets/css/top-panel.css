@@ -64,10 +64,10 @@
   /* свойства привлекающей кнопки */
   .top-panel-button-akcent {
     background-color: rgba(195, 7, 7, 0.2);
+    border-radius: 3px;
   }
   .top-panel-button-akcent:hover {
-    box-shadow: 0 0 15px rgba(82, 224, 82, 0.904);
-    background-color: rgba(21, 195, 21, 0.904);
+    background-color: rgba(195, 7, 7, 0.5);
   }
   /* блок контактов на верхней панели */
   .top-panel-contacts {
