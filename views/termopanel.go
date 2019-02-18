@@ -28,8 +28,6 @@ func TermopanelHandler(w http.ResponseWriter, r *http.Request) {
 		"templates/termopanel/portfolio.html",
 		"templates/termopanel/video.html",
 		"templates/termopanel/promo.html",
-		"templates/termopanel/qualities.html",
-		"templates/termopanel/we-work.html",
 	)
 
 	if err := tmpl.Execute(w, nil); err != nil {

@@ -28,8 +28,6 @@ func HaubergHandler(w http.ResponseWriter, r *http.Request) {
 		"templates/hauberg/portfolio.html",
 		"templates/hauberg/video.html",
 		"templates/hauberg/promo.html",
-		"templates/hauberg/qualities.html",
-		"templates/hauberg/we-work.html",
 	)
 
 	if err := tmpl.Execute(w, nil); err != nil {

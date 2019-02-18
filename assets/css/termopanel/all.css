@@ -6,8 +6,6 @@
 @import "/assets/css/termopanel/portfolio.css";
 @import "/assets/css/termopanel/video.css";
 @import "/assets/css/termopanel/promo.css";
-@import "/assets/css/termopanel/qualities.css";
-@import "/assets/css/termopanel/we-work.css";
 
 .slide-root {
     height: calc(100vh - 120px);

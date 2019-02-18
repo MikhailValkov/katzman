@@ -6,8 +6,6 @@
 @import "/assets/css/vinil/portfolio.css";
 @import "/assets/css/vinil/video.css";
 @import "/assets/css/vinil/promo.css";
-@import "/assets/css/vinil/qualities.css";
-@import "/assets/css/vinil/we-work.css";
 
 .slide-root {
     height: calc(100vh - 120px);

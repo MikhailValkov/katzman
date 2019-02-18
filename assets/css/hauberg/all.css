@@ -6,8 +6,6 @@
 @import "/assets/css/hauberg/portfolio.css";
 @import "/assets/css/hauberg/video.css";
 @import "/assets/css/hauberg/promo.css";
-@import "/assets/css/hauberg/qualities.css";
-@import "/assets/css/hauberg/we-work.css";
 
 .slide-root {
     height: calc(100vh - 120px);

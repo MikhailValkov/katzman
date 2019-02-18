@@ -1,6 +1,6 @@
 var nextArrow = '<div class="control-next-arrow">▶▶</div>';
 var prevArrow = '<div class="control-prev-arrow">◀◀</div>';
-var maxSlidePosition = 9;
+var maxSlidePosition = 7;
 
 var control = {
     0 : {
@@ -50,18 +50,6 @@ var control = {
         title: "Фиброцементный сайдинг: предложение",
         prev: prevArrow + "Видео обзор",
         next: "Наши качества" + nextArrow,
-    },
-    8 : {
-        id: "qualities",
-        title: "Наши качества",
-        prev: prevArrow + "Предложение",
-        next: "Как мы работаем" + nextArrow,
-    },
-    9 : {
-        id: "we-work",
-        title: "Как мы работаем",
-        prev: prevArrow + "Наши качества",
-        next: "",
     },
 }
 

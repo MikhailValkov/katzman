@@ -27,8 +27,6 @@ func DecorHandler(w http.ResponseWriter, r *http.Request) {
 		"templates/decor/portfolio.html",
 		"templates/decor/video.html",
 		"templates/decor/promo.html",
-		"templates/decor/qualities.html",
-		"templates/decor/we-work.html",
 	)
 
 	if err := tmpl.Execute(w, nil); err != nil {

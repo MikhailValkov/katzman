@@ -28,8 +28,6 @@ func MetallHandler(w http.ResponseWriter, r *http.Request) {
 		"templates/metall/portfolio.html",
 		"templates/metall/video.html",
 		"templates/metall/promo.html",
-		"templates/metall/qualities.html",
-		"templates/metall/we-work.html",
 	)
 
 	if err := tmpl.Execute(w, nil); err != nil {

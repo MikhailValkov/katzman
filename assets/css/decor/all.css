@@ -6,8 +6,6 @@
 @import "/assets/css/decor/portfolio.css";
 @import "/assets/css/decor/video.css";
 @import "/assets/css/decor/promo.css";
-@import "/assets/css/decor/qualities.css";
-@import "/assets/css/decor/we-work.css";
 
 .slide-root {
     height: calc(100vh - 120px);

@@ -6,8 +6,6 @@
 @import "/assets/css/klinker/portfolio.css";
 @import "/assets/css/klinker/video.css";
 @import "/assets/css/klinker/promo.css";
-@import "/assets/css/klinker/qualities.css";
-@import "/assets/css/klinker/we-work.css";
 
 .slide-root {
     height: calc(100vh - 120px);

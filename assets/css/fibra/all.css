@@ -6,8 +6,6 @@
 @import "/assets/css/fibra/portfolio.css";
 @import "/assets/css/fibra/video.css";
 @import "/assets/css/fibra/promo.css";
-@import "/assets/css/fibra/qualities.css";
-@import "/assets/css/fibra/we-work.css";
 
 .slide-root {
     height: calc(100vh - 120px);

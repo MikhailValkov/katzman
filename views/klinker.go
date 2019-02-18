@@ -28,8 +28,6 @@ func KlinkerHandler(w http.ResponseWriter, r *http.Request) {
 		"templates/klinker/portfolio.html",
 		"templates/klinker/video.html",
 		"templates/klinker/promo.html",
-		"templates/klinker/qualities.html",
-		"templates/klinker/we-work.html",
 	)
 
 	if err := tmpl.Execute(w, nil); err != nil {

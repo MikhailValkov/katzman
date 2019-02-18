@@ -6,8 +6,6 @@
 @import "/assets/css/metall/portfolio.css";
 @import "/assets/css/metall/video.css";
 @import "/assets/css/metall/promo.css";
-@import "/assets/css/metall/qualities.css";
-@import "/assets/css/metall/we-work.css";
 
 .slide-root {
     height: calc(100vh - 120px);

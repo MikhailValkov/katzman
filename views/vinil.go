@@ -28,8 +28,6 @@ func VinilHandler(w http.ResponseWriter, r *http.Request) {
 		"templates/vinil/portfolio.html",
 		"templates/vinil/video.html",
 		"templates/vinil/promo.html",
-		"templates/vinil/qualities.html",
-		"templates/vinil/we-work.html",
 	)
 
 	if err := tmpl.Execute(w, nil); err != nil {
