@@ -26,8 +26,8 @@ func CallMeHandler(w http.ResponseWriter, r *http.Request) {
 	data := CallData{}
 	json.Unmarshal(b, &data)
 
-	msg := strings.Replace(fmt.Sprintf("%s+%s+%s", data.Name, data.Email, data.Phone), " ", "+", -1)
-	url := fmt.Sprintf("https://sms.ru/sms/send?api_id=94BA6955-2513-4B7A-7AD4-445860988EB3&to=79805246941&msg=%s", msg)
+	msg := strings.Replace(fmt.Sprintf("Заказ замера: %s+%s+%s", data.Name, data.Email, data.Phone), " ", "+", -1)
+	url := fmt.Sprintf("https://sms.ru/sms/send?api_id=A2C2432C-8573-0446-66E2-9F2E925F08FE&to=79045345759&msg=%s", msg)
 	// loggi.Info(msg)
 
 	resp, err := http.Get(url)

@@ -7,7 +7,7 @@
     object-fit: cover;
     height: 55px;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
-    background-color: rgb(245, 245, 239);
+    background-color: rgb(245, 245, 239, 0.2);
   }
   /* свойства логотипа верхней панели */
   .top-panel-logo {
