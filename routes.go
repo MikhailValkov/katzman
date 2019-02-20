@@ -23,5 +23,6 @@ func GetRoutes() *http.ServeMux {
 	mux.HandleFunc("/callme", Chain(views.CallMeHandler, Method("POST"), Logging()))
 
 	mux.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("assets/"))))
+	mux.Handle("/mobile/", http.StripPrefix("/mobile/", http.FileServer(http.Dir("mobile/"))))
 	return mux
 }

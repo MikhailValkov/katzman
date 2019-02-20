@@ -1,0 +1,43 @@
+{{ define "index" }}
+{{ template "header" }}
+{{ template "top-panel" }}
+<div class="main-materials-row">
+    <div class="top-panel-materials-column">
+        <div class="main-menu-item" onclick="location.href='/мокрый-фасад';">
+            <img src="/assets/img/main-content/aqua-fasad.jpg" />
+            <p>Мокрый фасад</p>
+        </div>
+        <div class="main-menu-item" onclick="location.href='/технониколь-хауберг';">
+            <img src="/assets/img/main-content/hauberg.jpg" />
+            <p>Фасадная плитка "Технониколь"</p>
+        </div>
+        <div class="main-menu-item" onclick="location.href='/виниловый-сайдинг';">
+            <img src="/assets/img/main-content/vinil.jpg" />
+            <p>Виниловый сайдинг</p>
+        </div>
+        <div class="main-menu-item" onclick="location.href='/металлосайдинг';">
+            <img src="/assets/img/main-content/metal-side.jpg" />
+            <p>Металлический сайдинг</p>
+        </div>
+    </div>
+    <div class="top-panel-materials-column">
+        <div class="main-menu-item" onclick="location.href='/фиброцементный-сайдинг';">
+            <img src="/assets/img/main-content/fibro.jpg" />
+            <p>Фиброцементный сайдинг</p>
+        </div>
+        <div class="main-menu-item" onclick="location.href='/термопанели';">
+            <img src="/assets/img/main-content/termo-panel.jpg" />
+            <p>Термопанели</p>
+        </div>
+        <div class="main-menu-item" onclick="location.href='/клинкерная-плитка';">
+            <img src="/assets/img/main-content/klinker.jpg" />
+            <p>Клинкерная плитка</p>
+        </div>
+        <div class="main-menu-item" onclick="location.href='/декоративные-элементы';">
+            <img src="/assets/img/main-content/decor.JPG" />
+            <p>Декоративные элементы</p>
+        </div>
+    </div>
+</div>
+{{ template "footer" }}
+{{ end }}

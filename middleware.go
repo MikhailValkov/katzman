@@ -2,11 +2,9 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
 	"time"
 
-	mobiledetect "github.com/Shaked/gomobiledetect"
 	"github.com/meehalkoff/loggi"
 )
 
@@ -25,11 +23,11 @@ func Logging() Middleware {
 			start := time.Now()
 			defer func() { loggi.Info(r.URL.Path, "\t", r.RemoteAddr, "\t", time.Since(start)) }()
 
-			detect := mobiledetect.NewMobileDetect(r, nil)
-			if detect.IsMobile() {
-				fmt.Fprint(w, "<h1><br><br><center>Мобильная версия в разработке.</center></h1>")
-				return
-			}
+			// detect := mobiledetect.NewMobileDetect(r, nil)
+			// if detect.IsMobile() {
+			// 	fmt.Fprint(w, "<h1><br><br><center>Мобильная версия в разработке.</center></h1>")
+			// 	return
+			// }
 			// Call the next middleware/handler in chain
 			f(w, r)
 		}

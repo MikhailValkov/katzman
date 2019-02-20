@@ -1,0 +1,75 @@
+{{ define "top-panel" }}
+<div id="topPanel" class="top-panel-root">
+  <img src="/assets/img/favicon.png" class="top-panel-logo">
+  <div class="top-panel-number">
+    <p class="top-panel-button-country">Белгородская область</p>
+    <a class="top-panel-button-phone" href="tel:+74722415533">+7 (4722) 41-55-33</a>
+  </div>
+  <img id="menuButton" src="/assets/img/icon-burger.png" class="top-panel-logo" onclick="menuToggle();">
+</div>
+<div id="menuContent" class="top-panel-content">
+  <!-- кнопки меню -->
+  <div class="top-panel-buttons">
+    <div id="calc-btn" class="top-panel-button" onclick="calcToggle();">
+      <img src="/assets/img/icon-calc.png">
+      <div class="top-panel-button-text">
+        <p>Калькулятор</p>
+      </div>
+    </div>
+    <div id="about-btn" class="top-panel-button" onclick="showAbout();">
+      <img src="/assets/img/icon-call.png">
+      <div class="top-panel-button-text">
+        <p>Контакты</p>
+      </div>
+    </div>
+    <div id="call-btn" class="top-panel-button" onclick="showCall();">
+      <img src="/assets/img/icon-rulet.png">
+      <div class="top-panel-button-text">
+        <p>Хочу замер</p>
+      </div>
+    </div>
+  </div>
+  <!-- кнопки материалов -->
+  <div class="top-panel-materials-row">
+    <div class="top-panel-materials-column">
+      <div class="main-menu-item" onclick="location.href='/мокрый-фасад';">
+        <img src="/assets/img/main-content/aqua-fasad.jpg" />
+        <p>Мокрый фасад</p>
+      </div>
+      <div class="main-menu-item" onclick="location.href='/технониколь-хауберг';">
+        <img src="/assets/img/main-content/hauberg.jpg" />
+        <p>Фасадная плитка "Технониколь"</p>
+      </div>
+      <div class="main-menu-item" onclick="location.href='/виниловый-сайдинг';">
+        <img src="/assets/img/main-content/vinil.jpg" />
+        <p>Виниловый сайдинг</p>
+      </div>
+      <div class="main-menu-item" onclick="location.href='/металлосайдинг';">
+        <img src="/assets/img/main-content/metal-side.jpg" />
+        <p>Металлический сайдинг</p>
+      </div>
+    </div>
+    <div class="top-panel-materials-column">
+      <div class="main-menu-item" onclick="location.href='/фиброцементный-сайдинг';">
+        <img src="/assets/img/main-content/fibro.jpg" />
+        <p>Фиброцементный сайдинг</p>
+      </div>
+      <div class="main-menu-item" onclick="location.href='/термопанели';">
+        <img src="/assets/img/main-content/termo-panel.jpg" />
+        <p>Термопанели</p>
+      </div>
+      <div class="main-menu-item" onclick="location.href='/клинкерная-плитка';">
+        <img src="/assets/img/main-content/klinker.jpg" />
+        <p>Клинкерная плитка</p>
+      </div>
+      <div class="main-menu-item" onclick="location.href='/декоративные-элементы';">
+        <img src="/assets/img/main-content/decor.JPG" />
+        <p>Декоративные элементы</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/mobile/assets/js/menu.js"></script>
+{{ template "calc" }}
+{{ end }}
