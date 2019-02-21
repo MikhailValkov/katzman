@@ -1,4 +1,5 @@
 var menuIsToggled = false;
+var calcIsToggled = false;
 
 function menuToggle() {
 
@@ -15,19 +16,23 @@ function menuToggle() {
     menuIsToggled = !menuIsToggled;
 }
 
-var calcIsToggled = false;
-
 function calcToggle() {
 
-    // var menuButton = document.getElementById("menuButton");
+    var menuButton = document.getElementById("menuButton");
 
     var calcContent = document.getElementById("calc");
 
     if (!calcIsToggled) {
         menuToggle();
+        menuButton.onclick = calcToggle;
+        menuButton.setAttribute("src", "/assets/img/icon-close.png");
+        menuButton.classList.add("top-panel-logo-close");
         calcContent.style.top = "50px";
     } else {
         calcContent.style.top = "-500vh";
+        menuButton.onclick = menuToggle;
+        menuButton.classList.remove("top-panel-logo-close");
+        menuButton.setAttribute("src", "/assets/img/icon-burger.png");
     }
 
     calcIsToggled = !calcIsToggled;
