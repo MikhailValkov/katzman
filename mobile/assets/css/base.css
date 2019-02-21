@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Exo+2");
 @import "/mobile/assets/css/top-panel.css";
 @import "/mobile/assets/css/calc.css";
-
+@import "/mobile/assets/css/call.css";
 body {
-    margin-top: 70px;
-    width: 100vw;
-
-    -webkit-font-smoothing: antialiased;
+  margin-top: 70px;
+  width: 100vw;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-

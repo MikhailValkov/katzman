@@ -16,13 +16,13 @@
         <p>Калькулятор</p>
       </div>
     </div>
-    <div id="about-btn" class="top-panel-button" onclick="showAbout();">
+    <div id="about-btn" class="top-panel-button" onclick="callToggle();">
       <img src="/assets/img/icon-call.png">
       <div class="top-panel-button-text">
         <p>Контакты</p>
       </div>
     </div>
-    <div id="call-btn" class="top-panel-button" onclick="showCall();">
+    <div id="call-btn" class="top-panel-button" onclick="callToggle();">
       <img src="/assets/img/icon-rulet.png">
       <div class="top-panel-button-text">
         <p>Хочу замер</p>
@@ -72,4 +72,5 @@
 
 <script src="/mobile/assets/js/menu.js"></script>
 {{ template "calc" }}
+{{ template "call" }}
 {{ end }}
