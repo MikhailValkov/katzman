@@ -1,6 +1,7 @@
 var menuIsToggled = false;
 var calcIsToggled = false;
 var callIsToggled = false;
+var aboutIsToggled = false;
 
 function menuToggle() {
 
@@ -59,6 +60,28 @@ function callToggle() {
     }
 
     callIsToggled = !callIsToggled;
+}
+
+function aboutToggle() {
+
+    var menuButton = document.getElementById("menuButton");
+
+    var aboutContent = document.getElementById("about");
+
+    if (!aboutIsToggled) {
+        menuToggle();
+        menuButton.onclick = aboutToggle;
+        menuButton.setAttribute("src", "/assets/img/icon-close.png");
+        menuButton.classList.add("top-panel-logo-close");
+        aboutContent.style.top = "50px";
+    } else {
+        aboutContent.style.top = "-500vh";
+        menuButton.onclick = menuToggle;
+        menuButton.classList.remove("top-panel-logo-close");
+        menuButton.setAttribute("src", "/assets/img/icon-burger.png");
+    }
+
+    aboutIsToggled = !aboutIsToggled;
 }
 
 

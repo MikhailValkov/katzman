@@ -2,6 +2,7 @@
 @import "/mobile/assets/css/top-panel.css";
 @import "/mobile/assets/css/calc.css";
 @import "/mobile/assets/css/call.css";
+@import "/mobile/assets/css/about.css";
 body {
   margin-top: 70px;
   width: 100vw;

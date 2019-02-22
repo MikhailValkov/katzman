@@ -21,6 +21,7 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 			"mobile/templates/top-panel.html",
 			"mobile/templates/calc.html",
 			"mobile/templates/call.html",
+			"mobile/templates/about.html",
 		)
 	} else {
 
