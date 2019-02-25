@@ -9,58 +9,62 @@
     transform: scale(0.9);
     /* display: none; */
     transition: 0.5s ease-in-out;
-  }
+}
 
-  .vid-root-col {
-      height: 100%;
-      width: 50%;
-      /* background-color: blueviolet; */
-  }
+.vid-root-col {
+    height: 100%;
+    width: 50%;
+    /* background-color: blueviolet; */
+}
 
-  .vid-short-note {
-      height: 50%;
-      width: 100%;
-      /* background-color: brown; */
-      font-size: 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      transform: scale(0.9);
-      /* padding: 10px; */
-  }
+.vid-short-note {
+    height: 50%;
+    width: 100%;
+    /* background-color: brown; */
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: scale(0.9);
+    /* padding: 10px; */
+}
 
-  .vid-short-note ul {
+.vid-short-note ul {
     padding-left: 30px;
-  }
-  .vid-short-note li {
-      margin-bottom: 10px;
-  }
+}
 
-  .vid-factura-root {
-      height: 50%;
-      width: 100%;
-      /* background-color: aqua; */
-      display: flex;
-      transform: scale(0.9);
-      box-shadow: 0 0 3px black;
-      /* background-color: teal; */
-      /* flex-direction: row; */
-      /* justify-content: space-around; */
-  }
-  .vid-factura-text {
-      font-size: 2rem;
-      width: 50%;
-      transform: scale(0.9);
-      /* background-color: rgba(255,255,255,0.8); */
-  }
-  .vid-factura-img {
-      width: 50%;
-      height: 100%;
-  }
-  .vid-factura-img img {
+.vid-short-note li {
+    margin-bottom: 10px;
+}
+
+.vid-factura-root {
+    height: 50%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    transform: scale(0.9);
+    box-shadow: 0 0 3px black;
+    /* background-color: teal; */
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+}
+
+.vid-factura-text {
+    font-size: 2rem;
+    width: 50%;
+    transform: scale(0.9);
+    /* background-color: rgba(255,255,255,0.8); */
+}
+
+.vid-factura-img {
+    width: 50%;
+    height: 100%;
+}
+
+.vid-factura-img img {
     max-width: 100%;
     width: 100%;
     overflow: hidden;
     height: 100%;
     object-fit: cover;
-  }
+}

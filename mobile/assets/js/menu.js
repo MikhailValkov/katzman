@@ -2,19 +2,47 @@ var menuIsToggled = false;
 var calcIsToggled = false;
 var callIsToggled = false;
 var aboutIsToggled = false;
+var contentIsHided = false;
+
+var contentPosition = window.pageYOffset;
+var lastContentPosition = 0;
+
+function hideContent(inChildren) {
+
+    var content = document.getElementById("content");
+    if (!contentIsHided) {
+        // contentPosition = window.pageYOffset;
+        if (!inChildren) {
+            lastContentPosition = contentPosition;
+        }
+        content.style.display = "none";
+    } else {
+        content.style.display = "block";
+
+        window.scrollTo(0, lastContentPosition);
+    }
+    contentIsHided = !contentIsHided;
+}
 
 function menuToggle() {
 
     var menuButton = document.getElementById("menuButton");
+    // var content = document.getElementById("content");
+
+    // console.log(window.pageYOffset);
 
     if (!menuIsToggled) {
         menuButton.classList.add("top-panel-logo-rotated");
         menuContent.style.top = "50px";
+        // content.style.display = "none";
+
     } else {
         menuButton.classList.remove("top-panel-logo-rotated");
         menuContent.style.top = "-500vh";
-    }
+        // content.style.display = "block";
 
+    }
+    hideContent(false);
     menuIsToggled = !menuIsToggled;
 }
 
@@ -36,7 +64,7 @@ function calcToggle() {
         menuButton.classList.remove("top-panel-logo-close");
         menuButton.setAttribute("src", "/assets/img/icon-burger.png");
     }
-
+    hideContent(true);
     calcIsToggled = !calcIsToggled;
 }
 
@@ -58,7 +86,7 @@ function callToggle() {
         menuButton.classList.remove("top-panel-logo-close");
         menuButton.setAttribute("src", "/assets/img/icon-burger.png");
     }
-
+    hideContent(true);
     callIsToggled = !callIsToggled;
 }
 
@@ -80,10 +108,14 @@ function aboutToggle() {
         menuButton.classList.remove("top-panel-logo-close");
         menuButton.setAttribute("src", "/assets/img/icon-burger.png");
     }
-
+    hideContent(true);
     aboutIsToggled = !aboutIsToggled;
 }
 
+window.onscroll = function () {
+    contentPosition = window.pageYOffset;
+    console.log(contentPosition);
+}
 
 // // let menuBlock = document.getElementById("main-menu");
 // // let menuButton = document.getElementById("menu-button");

@@ -33,16 +33,6 @@
     justify-content: space-evenly;
 }
 
-.top-panel-content {
-    height: calc(100vh - 50px);
-    width: 100%;
-    position: absolute;
-    top: -500vh;
-    /* тормозит в первый запуск */
-    transition: 0.2s ease-in-out;
-    background-color: white;
-}
-
 .top-panel-buttons {
     display: flex;
     flex-direction: row;
@@ -98,9 +88,20 @@
 }
 
 .top-panel-content {
-    z-index: 88888;
+    height: calc(100vh - 50px);
+    width: 100%;
+    position: absolute;
+    top: -500vh;
+    /* тормозит в первый запуск */
+    transition: 0.2s ease-in-out;
     background-color: white;
+    z-index: 88888;
+    /* background-color: white; */
 }
+
+/* .top-panel-content {
+
+} */
 
 .top-panel-materials-row {
     display: flex;

@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+    /* margin-bottom: 30px; */
+    font-size: 1.3em;
+}
+
+ul {
+    padding: 30px;
+}
+
+li {
+    margin-bottom: 10px;
+    line-height: 1.3em;
+}
+
+img {
+    width: 100%;
+}
+
+hr {
+    margin: 10px 0 10px 0;
+}
+
+.text-block {
+    line-height: 1.3em;
+    padding: 30px;
+}
