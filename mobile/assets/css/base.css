@@ -4,7 +4,7 @@
 @import "/mobile/assets/css/call.css";
 @import "/mobile/assets/css/about.css";
 body {
-  margin-top: 70px;
+  margin-top: 50px;
   width: 100vw;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

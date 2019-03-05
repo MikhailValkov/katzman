@@ -1,0 +1,19 @@
+.promo-card {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: url("/assets/img/mokrij-fasad/mozayka-factura-1.jpg");
+    background-position: center center;
+    background-size: contain;
+    /* text-shadow: 1px 1px 5px white; */
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.promo-card-content {
+    margin: 15px;
+    background-color: rgba(255, 255, 255, 0.50);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid green;
+}
