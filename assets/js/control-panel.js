@@ -7,12 +7,9 @@ next.innerHTML = control[0].next;
 title.innerHTML = control[0].title;
 prev.innerHTML = control[0].prev;
 
-// var startSlide = document.getElementById(control[0].id);
-// startSlide.style.left = "0px;"
-
 function nextSlide() {
     if (currentSlide < maxSlidePosition) {
-        
+
         var cslide = document.getElementById(control[currentSlide].id);
         cslide.style.left = "-100vw";
         var nslide = document.getElementById(control[currentSlide + 1].id);
@@ -26,10 +23,10 @@ function nextSlide() {
             next.style.visibility = "visible";
             next.innerHTML = control[currentSlide + 1].next;
         }
-        
+
         currentSlide += 1;
         prev.style.visibility = "visible";
-      }
+    }
 }
 
 function prevSlide() {
@@ -49,8 +46,8 @@ function prevSlide() {
         next.innerHTML = control[currentSlide - 1].next;
         currentSlide -= 1;
         next.style.visibility = "visible";
-      }
-    
+    }
+
 }
 
 function wheelHandler(event) {

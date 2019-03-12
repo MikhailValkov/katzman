@@ -3,53 +3,53 @@ var prevArrow = '<div class="control-prev-arrow">◀◀</div>';
 var maxSlidePosition = 7;
 
 var control = {
-    0 : {
+    0: {
+        id: "first-promo",
+        title: "Фиброцементный сайдинг: предложение",
+        prev: "",
+        next: "Виды покрытий" + nextArrow,
+    },
+    1: {
         id: "summary",
         title: "Плитка Технониколь: обзор",
-        prev: "",
+        prev: prevArrow + "Предложение",
         next: "Палитра цветов" + nextArrow,
     },
-    1 : {
+    2: {
         id: "palitra",
         title: "Плитка Технониколь: палитра цветов",
         prev: prevArrow + "Обзор",
         next: "Качества" + nextArrow,
     },
-    2 : {
+    3: {
         id: "kachestva",
         title: "Плитка Технониколь: качества",
         prev: prevArrow + "Палитра цветов",
         next: "Технология монтажа" + nextArrow,
     },
-    3 : {
+    4: {
         id: "schema",
         title: "Плитка Технониколь: монтаж",
         prev: prevArrow + "Качества",
         next: "Устройство откосов" + nextArrow,
     },
-    4 : {
+    5: {
         id: "otkos",
         title: "Плитка Технониколь: откосы",
         prev: prevArrow + "Технология монтажа",
         next: "Портфолио" + nextArrow,
     },
-    5 : {
+    6: {
         id: "portfolio",
         title: "Плитка Технониколь: портфолио",
         prev: prevArrow + "Устройство откосов",
         next: "Видео обзор" + nextArrow,
     },
-    6 : {
+    7: {
         id: "video",
         title: "Плитка Технониколь: видео обзор",
         prev: prevArrow + "Портфолио",
         next: "Предложение" + nextArrow,
-    },
-    7: {
-        id: "promo",
-        title: "Плитка Технониколь: предложение",
-        prev: prevArrow + "Видео обзор",
-        next: "Наши качества" + nextArrow,
     },
 }
 

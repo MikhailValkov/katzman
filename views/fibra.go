@@ -6,6 +6,7 @@ import (
 
 	mobiledetect "github.com/Shaked/gomobiledetect"
 	"github.com/meehalkoff/loggi"
+	"gitlab.com/mvalkov/katzman/lib"
 )
 
 func FibraHandler(w http.ResponseWriter, r *http.Request) {
@@ -33,6 +34,7 @@ func FibraHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/top-panel/call.html",
 			"templates/top-panel/main-menu.html",
 			"templates/control-panel.html",
+			"templates/firstPromoBlock.html",
 			"templates/fibra/index.html",
 			"templates/fibra/summary.html",
 			"templates/fibra/palitra.html",
@@ -45,7 +47,12 @@ func FibraHandler(w http.ResponseWriter, r *http.Request) {
 		)
 	}
 
-	if err := tmpl.Execute(w, nil); err != nil {
+	data := lib.FirstPromoBlock{
+		MaterialName: `Фиброцементный сайдинг`,
+		ID:           "fibraPrice",
+		PictureURL:   "/assets/img/promo/wide_promo.jpg",
+	}
+	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)
 	}
 }

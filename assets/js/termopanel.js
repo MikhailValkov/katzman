@@ -3,53 +3,53 @@ var prevArrow = '<div class="control-prev-arrow">◀◀</div>';
 var maxSlidePosition = 7;
 
 var control = {
-    0 : {
-        id: "summary",
-        title: "Термопанели: обзор",
+    0: {
+        id: "first-promo",
+        title: "Фиброцементный сайдинг: предложение",
         prev: "",
+        next: "Виды покрытий" + nextArrow,
+    },
+    1: {
+        id: "summary",
+        title: "Фиброцементный сайдинг: обзор",
+        prev: prevArrow + "Предложение",
         next: "Палитра цветов" + nextArrow,
     },
-    1 : {
+    2: {
         id: "palitra",
         title: "Термопанели: палитра цветов",
         prev: prevArrow + "Обзор",
         next: "Качества" + nextArrow,
     },
-    2 : {
+    3: {
         id: "kachestva",
         title: "Термопанели: качества",
         prev: prevArrow + "Палитра цветов",
         next: "Технология монтажа" + nextArrow,
     },
-    3 : {
+    4: {
         id: "schema",
         title: "Термопанели: монтаж",
         prev: prevArrow + "Качества",
         next: "Устройство откосов" + nextArrow,
     },
-    4 : {
+    5: {
         id: "otkos",
         title: "Термопанели: откосы",
         prev: prevArrow + "Технология монтажа",
         next: "Портфолио" + nextArrow,
     },
-    5 : {
+    6: {
         id: "portfolio",
         title: "Термопанели: портфолио",
         prev: prevArrow + "Устройство откосов",
         next: "Видео обзор" + nextArrow,
     },
-    6 : {
+    7: {
         id: "video",
         title: "Термопанели: видео обзор",
         prev: prevArrow + "Портфолио",
         next: "Предложение" + nextArrow,
-    },
-    7: {
-        id: "promo",
-        title: "Термопанели: предложение",
-        prev: prevArrow + "Видео обзор",
-        next: "Наши качества" + nextArrow,
     },
 }
 

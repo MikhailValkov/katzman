@@ -6,6 +6,7 @@ import (
 
 	mobiledetect "github.com/Shaked/gomobiledetect"
 	"github.com/meehalkoff/loggi"
+	"gitlab.com/mvalkov/katzman/lib"
 )
 
 func MokrijFasadHandler(w http.ResponseWriter, r *http.Request) {
@@ -28,6 +29,7 @@ func MokrijFasadHandler(w http.ResponseWriter, r *http.Request) {
 		tmpl.ParseFiles(
 			"templates/header.html",
 			"templates/footer.html",
+			"templates/firstPromoBlock.html",
 			"templates/top-panel/top-panel.html",
 			"templates/top-panel/about.html",
 			"templates/top-panel/calc.html",
@@ -46,7 +48,13 @@ func MokrijFasadHandler(w http.ResponseWriter, r *http.Request) {
 		)
 	}
 
-	if err := tmpl.Execute(w, nil); err != nil {
+	data := lib.FirstPromoBlock{
+		MaterialName: `Утепление фасадов, короед, шуба, мраморная крошка.`,
+		ID:           "mokrijPrice",
+		PictureURL:   "/assets/img/promo/wide_promo.jpg",
+	}
+
+	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)
 	}
 }

@@ -3,54 +3,55 @@ var prevArrow = '<div class="control-prev-arrow">◀◀</div>';
 var maxSlidePosition = 7;
 
 var control = {
-    0 : {
+    0: {
+        id: "first-promo",
+        title: "Мокрый фасад: предложение",
+        prev: "",
+        next: "Виды покрытий" + nextArrow,
+    },
+    1: {
         id: "vid",
         title: "Мокрый фасад: виды покрытий",
-        prev: "",
+        prev: prevArrow + "Предложение",
         next: "Палитра цветов" + nextArrow,
     },
-    1 : {
+    2: {
         id: "palitra",
         title: "Мокрый фасад: палитра цветов",
         prev: prevArrow + "Виды покрытий",
         next: "Плюсы и минусы" + nextArrow,
     },
-    2 : {
+    3: {
         id: "plus-minus",
         title: "Мокрый фасад: плюсы и минусы",
         prev: prevArrow + "Палитра цветов",
         next: "Технология монтажа" + nextArrow,
     },
-    3 : {
+    4: {
         id: "schema",
         title: "Мокрый фасад: технология монтажа",
         prev: prevArrow + "Плюсы и минусы",
         next: "Устройство откосов" + nextArrow,
     },
-    4 : {
+    5: {
         id: "otkos",
         title: "Мокрый фасад: устройство откосов",
         prev: prevArrow + "Технология монтажа",
         next: "Портфолио" + nextArrow,
     },
-    5 : {
+    6: {
         id: "portfolio",
         title: "Мокрый фасад: портфолио",
         prev: prevArrow + "Устройство откосов",
         next: "Видео обзор" + nextArrow,
     },
-    6 : {
+    7: {
         id: "video",
         title: "Мокрый фасад: видео обзор",
         prev: prevArrow + "Портфолио",
         next: "Предложение" + nextArrow,
     },
-    7: {
-        id: "promo",
-        title: "Мокрый фасад: предложение",
-        prev: prevArrow + "Видео обзор",
-        next: "Наши качества" + nextArrow,
-    },
+
 }
 
 var maxPortfolioPosition = 7;

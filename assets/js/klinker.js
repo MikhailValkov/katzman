@@ -3,53 +3,53 @@ var prevArrow = '<div class="control-prev-arrow">◀◀</div>';
 var maxSlidePosition = 7;
 
 var control = {
-    0 : {
-        id: "summary",
-        title: "Клинкерная плитка: обзор",
+    0: {
+        id: "first-promo",
+        title: "Фиброцементный сайдинг: предложение",
         prev: "",
+        next: "Виды покрытий" + nextArrow,
+    },
+    1: {
+        id: "summary",
+        title: "Фиброцементный сайдинг: обзор",
+        prev: prevArrow + "Предложение",
         next: "Палитра цветов" + nextArrow,
     },
-    1 : {
+    2: {
         id: "palitra",
         title: "Клинкерная плитка: палитра цветов",
         prev: prevArrow + "Обзор",
         next: "Качества" + nextArrow,
     },
-    2 : {
+    3: {
         id: "kachestva",
         title: "Клинкерная плитка: качества",
         prev: prevArrow + "Палитра цветов",
         next: "Технология монтажа" + nextArrow,
     },
-    3 : {
+    4: {
         id: "schema",
         title: "Клинкерная плитка: монтаж",
         prev: prevArrow + "Качества",
         next: "Устройство откосов" + nextArrow,
     },
-    4 : {
+    5: {
         id: "otkos",
         title: "Клинкерная плитка: откосы",
         prev: prevArrow + "Технология монтажа",
         next: "Портфолио" + nextArrow,
     },
-    5 : {
+    6: {
         id: "portfolio",
         title: "Клинкерная плитка: портфолио",
         prev: prevArrow + "Устройство откосов",
         next: "Видео обзор" + nextArrow,
     },
-    6 : {
+    7: {
         id: "video",
         title: "Клинкерная плитка: видео обзор",
         prev: prevArrow + "Портфолио",
         next: "Предложение" + nextArrow,
-    },
-    7: {
-        id: "promo",
-        title: "Клинкерная плитка: предложение",
-        prev: prevArrow + "Видео обзор",
-        next: "Наши качества" + nextArrow,
     },
 }
 

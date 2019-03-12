@@ -6,6 +6,7 @@ import (
 
 	mobiledetect "github.com/Shaked/gomobiledetect"
 	"github.com/meehalkoff/loggi"
+	"gitlab.com/mvalkov/katzman/lib"
 )
 
 func VinilHandler(w http.ResponseWriter, r *http.Request) {
@@ -32,6 +33,7 @@ func VinilHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/top-panel/call.html",
 			"templates/top-panel/main-menu.html",
 			"templates/control-panel.html",
+			"templates/firstPromoBlock.html",
 			"templates/vinil/index.html",
 			"templates/vinil/summary.html",
 			"templates/vinil/palitra.html",
@@ -43,8 +45,12 @@ func VinilHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/vinil/promo.html",
 		)
 	}
-
-	if err := tmpl.Execute(w, nil); err != nil {
+	data := lib.FirstPromoBlock{
+		MaterialName: `Виниловый садйинг`,
+		ID:           "vinilPrice",
+		PictureURL:   "/assets/img/promo/wide_promo.jpg",
+	}
+	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)
 	}
 }

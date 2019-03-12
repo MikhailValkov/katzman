@@ -3,53 +3,53 @@ var prevArrow = '<div class="control-prev-arrow">◀◀</div>';
 var maxSlidePosition = 7;
 
 var control = {
-    0 : {
-        id: "summary",
-        title: "Металлосайдинг: обзор",
+    0: {
+        id: "first-promo",
+        title: "Фиброцементный сайдинг: предложение",
         prev: "",
+        next: "Виды покрытий" + nextArrow,
+    },
+    1: {
+        id: "summary",
+        title: "Фиброцементный сайдинг: обзор",
+        prev: prevArrow + "Предложение",
         next: "Палитра цветов" + nextArrow,
     },
-    1 : {
+    2: {
         id: "palitra",
         title: "Металлосайдинг: палитра цветов",
         prev: prevArrow + "Обзор",
         next: "Качества" + nextArrow,
     },
-    2 : {
+    3: {
         id: "kachestva",
         title: "Металлосайдинг: качества",
         prev: prevArrow + "Палитра цветов",
         next: "Технология монтажа" + nextArrow,
     },
-    3 : {
+    4: {
         id: "schema",
         title: "Металлосайдинг: монтаж",
         prev: prevArrow + "Качества",
         next: "Устройство откосов" + nextArrow,
     },
-    4 : {
+    5: {
         id: "otkos",
         title: "Металлосайдинг: откосы",
         prev: prevArrow + "Технология монтажа",
         next: "Портфолио" + nextArrow,
     },
-    5 : {
+    6: {
         id: "portfolio",
         title: "Металлосайдинг: портфолио",
         prev: prevArrow + "Устройство откосов",
         next: "Видео обзор" + nextArrow,
     },
-    6 : {
+    7: {
         id: "video",
         title: "Металлосайдинг: видео обзор",
         prev: prevArrow + "Портфолио",
         next: "Предложение" + nextArrow,
-    },
-    7: {
-        id: "promo",
-        title: "Металлосайдинг: предложение",
-        prev: prevArrow + "Видео обзор",
-        next: "Наши качества" + nextArrow,
     },
 }
 

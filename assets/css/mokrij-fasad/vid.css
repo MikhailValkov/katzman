@@ -5,6 +5,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     position: absolute;
+    left: -100vw;
     /* background-color: beige; */
     transform: scale(0.9);
     /* display: none; */

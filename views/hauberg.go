@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"github.com/meehalkoff/loggi"
+	"gitlab.com/mvalkov/katzman/lib"
 )
 
 func HaubergHandler(w http.ResponseWriter, r *http.Request) {
@@ -19,6 +20,7 @@ func HaubergHandler(w http.ResponseWriter, r *http.Request) {
 		"templates/top-panel/call.html",
 		"templates/top-panel/main-menu.html",
 		"templates/control-panel.html",
+		"templates/firstPromoBlock.html",
 		"templates/hauberg/index.html",
 		"templates/hauberg/summary.html",
 		"templates/hauberg/palitra.html",
@@ -30,7 +32,12 @@ func HaubergHandler(w http.ResponseWriter, r *http.Request) {
 		"templates/hauberg/promo.html",
 	)
 
-	if err := tmpl.Execute(w, nil); err != nil {
+	data := lib.FirstPromoBlock{
+		MaterialName: `Фасадная плитка "Технониколь"`,
+		ID:           "haubergPrice",
+		PictureURL:   "/assets/img/promo/wide_promo.jpg",
+	}
+	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)
 	}
 }

@@ -37,6 +37,7 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/top-panel/call.html",
 		)
 	}
+
 	if err := tmpl.Execute(w, nil); err != nil {
 		loggi.Fatal(err)
 	}

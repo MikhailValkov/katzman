@@ -6,6 +6,7 @@ import (
 
 	mobiledetect "github.com/Shaked/gomobiledetect"
 	"github.com/meehalkoff/loggi"
+	"gitlab.com/mvalkov/katzman/lib"
 )
 
 func KlinkerHandler(w http.ResponseWriter, r *http.Request) {
@@ -34,6 +35,7 @@ func KlinkerHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/top-panel/main-menu.html",
 			"templates/control-panel.html",
 			"templates/klinker/index.html",
+			"templates/firstPromoBlock.html",
 			"templates/klinker/summary.html",
 			"templates/klinker/palitra.html",
 			"templates/klinker/kachestva.html",
@@ -44,8 +46,12 @@ func KlinkerHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/klinker/promo.html",
 		)
 	}
-
-	if err := tmpl.Execute(w, nil); err != nil {
+	data := lib.FirstPromoBlock{
+		MaterialName: `Клинкерная плитка`,
+		ID:           "klinkerPrice",
+		PictureURL:   "/assets/img/promo/wide_promo.jpg",
+	}
+	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)
 	}
 }

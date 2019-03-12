@@ -6,7 +6,7 @@
 @import "/assets/css/decor/portfolio.css";
 @import "/assets/css/decor/video.css";
 @import "/assets/css/decor/promo.css";
-
+@import "/assets/css/first-promo-block.css";
 .slide-root {
     height: calc(100vh - 120px);
     width: 100%;
@@ -15,4 +15,3 @@
     transition: 0.5s ease-in-out;
     left: -100vw;
 }
-

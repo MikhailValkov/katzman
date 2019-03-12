@@ -6,6 +6,7 @@ import (
 
 	mobiledetect "github.com/Shaked/gomobiledetect"
 	"github.com/meehalkoff/loggi"
+	"gitlab.com/mvalkov/katzman/lib"
 )
 
 func TermopanelHandler(w http.ResponseWriter, r *http.Request) {
@@ -33,6 +34,7 @@ func TermopanelHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/top-panel/call.html",
 			"templates/top-panel/main-menu.html",
 			"templates/control-panel.html",
+			"templates/firstPromoBlock.html",
 			"templates/termopanel/index.html",
 			"templates/termopanel/summary.html",
 			"templates/termopanel/palitra.html",
@@ -44,8 +46,12 @@ func TermopanelHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/termopanel/promo.html",
 		)
 	}
-
-	if err := tmpl.Execute(w, nil); err != nil {
+	data := lib.FirstPromoBlock{
+		MaterialName: `Термопанели`,
+		ID:           "termoPrice",
+		PictureURL:   "/assets/img/promo/wide_promo.jpg",
+	}
+	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)
 	}
 }
