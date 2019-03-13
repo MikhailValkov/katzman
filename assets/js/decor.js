@@ -1,6 +1,6 @@
 var nextArrow = '<div class="control-next-arrow">▶▶</div>';
 var prevArrow = '<div class="control-prev-arrow">◀◀</div>';
-var maxSlidePosition = 7;
+var maxSlidePosition = 6;
 
 var control = {
     0: {
@@ -39,13 +39,13 @@ var control = {
         prev: prevArrow + "Портфолио",
         next: "Предложение" + nextArrow,
     },
+    // 6: {
+    //     id: "promo",
+    //     title: "Декоративные элементы: предложение",
+    //     prev: prevArrow + "Видео обзор",
+    //     next: "",
+    // },
     6: {
-        id: "promo",
-        title: "Декоративные элементы: предложение",
-        prev: prevArrow + "Видео обзор",
-        next: "",
-    },
-    7: {
         id: "last-promo",
         title: "Мокрый фасад: звоните!",
         prev: prevArrow + "Видео",
