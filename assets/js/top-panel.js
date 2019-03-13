@@ -73,7 +73,7 @@ function showCall() {
 
 function closeCall() {
     callBlock.style.left = "-100vw";
-    callButton.innerHTML = '<img src="/assets/img/icon-rulet.png"><div class="top-panel-button-text"><p>Заказать замер</p></div>';
+    callButton.innerHTML = '<img src="/assets/img/icon-rulet.png"><div class="top-panel-button-text"><p>Хочу замер!</p></div>';
     callButton.onclick = showCall;
     callButton.classList.remove("top-panel-button-akcent");
 }
