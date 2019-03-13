@@ -43,6 +43,7 @@ func MetallHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/metall/portfolio.html",
 			"templates/metall/video.html",
 			"templates/metall/promo.html",
+			"templates/lastPromoBlock.html",
 		)
 	}
 	data := lib.FirstPromoBlock{

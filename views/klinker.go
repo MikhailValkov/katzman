@@ -44,6 +44,7 @@ func KlinkerHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/klinker/portfolio.html",
 			"templates/klinker/video.html",
 			"templates/klinker/promo.html",
+			"templates/lastPromoBlock.html",
 		)
 	}
 	data := lib.FirstPromoBlock{

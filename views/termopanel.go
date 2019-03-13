@@ -44,6 +44,7 @@ func TermopanelHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/termopanel/portfolio.html",
 			"templates/termopanel/video.html",
 			"templates/termopanel/promo.html",
+			"templates/lastPromoBlock.html",
 		)
 	}
 	data := lib.FirstPromoBlock{

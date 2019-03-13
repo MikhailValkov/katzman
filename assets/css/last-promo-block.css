@@ -1,0 +1,65 @@
+.LastPromoBlock__Root {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    /* background-image: url("https://www.auction-house.ru/media/lots/435A7223_Panorama.jpg"); */
+    background-image: url('/assets/img/promo/wide_promo_1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #000d;
+    text-shadow: 0 0 5px #fffa;
+    height: calc(100vh - 135px);
+    width: 100%;
+    position: absolute;
+    transform: scale(0.9);
+    left: -100vw;
+    transition: 0.5s ease-in-out;
+}
+
+.LastPromoBlock__Message {
+    width: 60%;
+    height: 100%;
+    /*  background-color: violet; */
+    transform: scale(0.9);
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #ccca;
+    justify-content: space-evenly;
+}
+
+.LastPromoBlock__Message>h1 {
+    padding: 1em;
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000d;
+    text-shadow: 0 0 5px #fffa;
+}
+
+.LastPromoBlock__Buttons {
+    width: 40%;
+    height: 100%;
+    transform: scale(0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.LastPromoBlock__Buttons>button {
+    font-size: 3rem;
+    text-transform: uppercase;
+    background-color: rgba(204, 204, 204, 0.76);
+    cursor: pointer;
+    border: 1px solid rgba(204, 204, 204, 0.829);
+    border-radius: 5px;
+    padding: 0.5em 0 0.5em 0;
+}
+
+.LastPromoBlock__Buttons>button:hover {
+    background-color: rgba(203, 224, 174, 0.76);
+}
