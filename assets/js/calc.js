@@ -1,12 +1,12 @@
 var materials = {
     "decor": {
         "koroed": {
-            "cost":100,
-            "job_cost": 101
+            "cost": 240,
+            "job_cost": 500
         },
         "mramor": {
-            "cost": 200,
-            "job_cost": 200
+            "cost": 762,
+            "job_cost": 500
         },
         "hauberg": {
             "cost": 300,
@@ -36,19 +36,19 @@ var materials = {
     "warm": {
         "nowarm": 0,
         "penoplast": {
-            "dsoft": 100,
-            "dmid": 200,
-            "dhard": 400
+            "dsoft": 413,
+            "dmid": 468,
+            "dhard": 628
         },
         "penopleks": {
-            "dsoft": 120,
-            "dmid": 220,
-            "dhard": 520
+            "dsoft": 485,
+            "dmid": 597,
+            "dhard": 887
         },
         "vata": {
-            "dsoft": 150,
-            "dmid": 250,
-            "dhard": 550
+            "dsoft": 506,
+            "dmid": 608,
+            "dhard": 908
         }
     }
 }
@@ -128,7 +128,7 @@ function enableDepth() {
     press(document.getElementById("dsoft"));
 }
 
-function setDefaultChoice () {
+function setDefaultChoice() {
     var d = document.getElementById(defaultSetting.decor);
     var w = document.getElementById(defaultSetting.warm);
 
@@ -188,7 +188,7 @@ function calculateSumm() {
     if (calcState.depth !== "") {
         cost_warm = materials.warm[calcState.warm][calcState.depth];
     }
-    
+
     var square = calcState.square;
 
     var result = (cost + job_cost + cost_warm) * square;
