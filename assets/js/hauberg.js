@@ -5,7 +5,7 @@ var maxSlidePosition = 8;
 var control = {
     0: {
         id: "first-promo",
-        title: "Фиброцементный сайдинг: предложение",
+        title: "Плитка Технониколь: предложение",
         prev: "",
         next: "Виды покрытий" + nextArrow,
     },
