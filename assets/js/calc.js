@@ -2,35 +2,43 @@ var materials = {
     "decor": {
         "koroed": {
             "cost": 240,
-            "job_cost": 500
+            "job_cost": 500,
+            "warm_coef": 1
         },
         "mramor": {
             "cost": 762,
-            "job_cost": 500
+            "job_cost": 500,
+            "warm_coef": 1
         },
         "hauberg": {
             "cost": 300,
-            "job_cost": 300
+            "job_cost": 300,
+            "warm_coef": .35
         },
         "vinil": {
             "cost": 400,
-            "job_cost": 400
+            "job_cost": 400,
+            "warm_coef": .35
         },
         "metal": {
             "cost": 500,
-            "job_cost": 500
+            "job_cost": 500,
+            "warm_coef": .35
         },
         "fibra": {
             "cost": 600,
-            "job_cost": 600
+            "job_cost": 600,
+            "warm_coef": .35
         },
         "termo": {
             "cost": 700,
-            "job_cost": 700
+            "job_cost": 700,
+            "warm_coef": 0
         },
         "klinker": {
             "cost": 800,
-            "job_cost": 800
+            "job_cost": 800,
+            "warm_coef": 1
         }
     },
     "warm": {
@@ -183,6 +191,7 @@ function calculateSumm() {
     var out = document.getElementById("calcSumma");
     var cost = materials.decor[calcState.decor].cost;
     var job_cost = materials.decor[calcState.decor].job_cost;
+    var warm_coef = materials.decor[calcState.decor].warm_coef;
 
     var cost_warm = 0;
     if (calcState.depth !== "") {
@@ -191,7 +200,7 @@ function calculateSumm() {
 
     var square = calcState.square;
 
-    var result = (cost + job_cost + cost_warm) * square;
+    var result = ((cost + job_cost) + (cost_warm * warm_coef)) * square;
     console.log(result);
-    out.value = result;
+    out.value = Math.round(result);
 }
