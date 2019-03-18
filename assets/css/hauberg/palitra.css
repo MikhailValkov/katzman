@@ -4,15 +4,37 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.palitra-root img {
-    height: 100%;
-    /* height: auto; */
+.palitra-color-block {
+    height: 45%;
+    /* width: calc(25% - 30px); */
+    position: relative;
+    transition: 0.1s ease-in-out;
+    opacity: 0.9;
+    border: 2px solid rgba(0, 0, 0, 0.75);
+}
+
+.palitra-color-block>img {
+    max-width: 100%;
+    width: 100%;
     overflow: hidden;
+    height: 100%;
+    object-fit: cover;
 }
 
-.palitra-root p {
+.palitra-color-block>p {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--main-bg1-color);
+    width: 100%;
+    min-height: 60px;
     font-size: 3rem;
-    width: 30%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    box-shadow: 0 0 2px black inset;
 }
