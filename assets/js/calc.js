@@ -11,8 +11,8 @@ var materials = {
             "warm_coef": 1
         },
         "hauberg": {
-            "cost": 300,
-            "job_cost": 300,
+            "cost": 350,
+            "job_cost": 400,
             "warm_coef": .35
         },
         "vinil": {
@@ -26,13 +26,13 @@ var materials = {
             "warm_coef": .35
         },
         "fibra": {
-            "cost": 600,
-            "job_cost": 600,
+            "cost": 1900,
+            "job_cost": 610,
             "warm_coef": .35
         },
         "termo": {
-            "cost": 700,
-            "job_cost": 700,
+            "cost": 850,
+            "job_cost": 400,
             "warm_coef": 0
         },
         "klinker": {
