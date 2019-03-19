@@ -50,7 +50,7 @@ func KlinkerHandler(w http.ResponseWriter, r *http.Request) {
 	data := lib.FirstPromoBlock{
 		MaterialName: `Клинкерная плитка`,
 		ID:           "klinkerPrice",
-		PictureURL:   "/assets/img/promo/wide_promo.jpg",
+		PictureURL:   "/assets/img/promo/klinker.jpg",
 	}
 	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)
