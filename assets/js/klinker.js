@@ -5,13 +5,13 @@ var maxSlidePosition = 8;
 var control = {
     0: {
         id: "first-promo",
-        title: "Фиброцементный сайдинг: предложение",
+        title: "Клинкерная плитка: предложение",
         prev: "",
         next: "Виды покрытий" + nextArrow,
     },
     1: {
         id: "summary",
-        title: "Фиброцементный сайдинг: обзор",
+        title: "Клинкерная плитка: обзор",
         prev: prevArrow + "Предложение",
         next: "Палитра цветов" + nextArrow,
     },
@@ -53,7 +53,7 @@ var control = {
     },
     8: {
         id: "last-promo",
-        title: "Мокрый фасад: звоните!",
+        title: "Клинкерная плитка: звоните!",
         prev: prevArrow + "Видео",
         next: "",
     },
