@@ -36,7 +36,7 @@ func HaubergHandler(w http.ResponseWriter, r *http.Request) {
 	data := lib.FirstPromoBlock{
 		MaterialName: `Фасадная плитка "Технониколь"`,
 		ID:           "haubergPrice",
-		PictureURL:   "/assets/img/promo/wide_promo.jpg",
+		PictureURL:   "/assets/img/promo/hauberg.png",
 	}
 	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)

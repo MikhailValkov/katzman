@@ -52,7 +52,7 @@ func MokrijFasadHandler(w http.ResponseWriter, r *http.Request) {
 	data := lib.FirstPromoBlock{
 		MaterialName: `Утепление фасадов, короед, шуба, мраморная крошка.`,
 		ID:           "mokrijPrice",
-		PictureURL:   "/assets/img/promo/wide_promo.jpg",
+		PictureURL:   "/assets/img/promo/koroed.jpg",
 	}
 
 	if err := tmpl.Execute(w, data); err != nil {

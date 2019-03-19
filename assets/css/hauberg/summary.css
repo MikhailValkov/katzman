@@ -6,22 +6,10 @@
     justify-content: space-between;
 }
 
-.summary-row {
-    /* background-color: greenyellow; */
-    height: 48%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.summary-row p {
-    font-size: 1.8rem;
-    width: 48%;
-}
-
-.summary-row img {
-    width: 48%;
-    overflow: hidden;
-    box-shadow: 0 0 2px black;
-    object-fit: cover;
+.summary-root img {
+    /* width: 48%; */
+    /* overflow: hidden; */
+    height: 100%;
+    /* box-shadow: 0 0 2px black; */
+    object-fit: contain;
 }
