@@ -51,7 +51,7 @@ func FibraHandler(w http.ResponseWriter, r *http.Request) {
 	data := lib.FirstPromoBlock{
 		MaterialName: `Фиброцементный сайдинг`,
 		ID:           "fibraPrice",
-		PictureURL:   "/assets/img/promo/fibr.jpg",
+		PictureURL:   "/assets/img/promo/fibra.jpg",
 	}
 	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)
