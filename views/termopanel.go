@@ -50,7 +50,7 @@ func TermopanelHandler(w http.ResponseWriter, r *http.Request) {
 	data := lib.FirstPromoBlock{
 		MaterialName: `Термопанели`,
 		ID:           "termoPrice",
-		PictureURL:   "/assets/img/promo/wide_promo.jpg",
+		PictureURL:   "/assets/img/promo/termopanel.jpg",
 	}
 	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)
