@@ -49,7 +49,7 @@ func VinilHandler(w http.ResponseWriter, r *http.Request) {
 	data := lib.FirstPromoBlock{
 		MaterialName: `Виниловый садйинг`,
 		ID:           "vinilPrice",
-		PictureURL:   "/assets/img/promo/wide_promo.jpg",
+		PictureURL:   "/assets/img/promo/vinil.jpg",
 	}
 	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)
