@@ -49,7 +49,7 @@ func MetallHandler(w http.ResponseWriter, r *http.Request) {
 	data := lib.FirstPromoBlock{
 		MaterialName: `Металический сайдинг`,
 		ID:           "metalPrice",
-		PictureURL:   "/assets/img/promo/wide_promo.jpg",
+		PictureURL:   "/assets/img/promo/metall.jpg",
 	}
 
 	if err := tmpl.Execute(w, data); err != nil {
