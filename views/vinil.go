@@ -47,7 +47,7 @@ func VinilHandler(w http.ResponseWriter, r *http.Request) {
 		)
 	}
 	data := lib.FirstPromoBlock{
-		MaterialName: `Виниловый садйинг`,
+		MaterialName: `Виниловый сайдинг`,
 		ID:           "vinilPrice",
 		PictureURL:   "/assets/img/promo/vinil.jpg",
 		UnitName:     "кв.м.",
