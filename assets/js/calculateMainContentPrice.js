@@ -47,3 +47,10 @@ try {
 } catch (err) {
     console.log(err)
 }
+
+try {
+    var dPrice = document.getElementById("decorPrice");
+    dPrice.innerHTML = materials.decor.decor.cost;
+} catch (err) {
+    console.log(err)
+}

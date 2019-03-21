@@ -51,6 +51,7 @@ func KlinkerHandler(w http.ResponseWriter, r *http.Request) {
 		MaterialName: `Клинкерная плитка`,
 		ID:           "klinkerPrice",
 		PictureURL:   "/assets/img/promo/klinker.jpg",
+		UnitName:     "кв.м.",
 	}
 	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)

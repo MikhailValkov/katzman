@@ -52,6 +52,7 @@ func FibraHandler(w http.ResponseWriter, r *http.Request) {
 		MaterialName: `Фиброцементный сайдинг`,
 		ID:           "fibraPrice",
 		PictureURL:   "/assets/img/promo/fibra.jpg",
+		UnitName:     "кв.м.",
 	}
 	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)

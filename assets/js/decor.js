@@ -1,39 +1,45 @@
 var nextArrow = '<div class="control-next-arrow">▶▶</div>';
 var prevArrow = '<div class="control-prev-arrow">◀◀</div>';
-var maxSlidePosition = 6;
+var maxSlidePosition = 7;
 
 var control = {
     0: {
-        id: "summary",
-        title: "Декоративные элементы: обзор",
+        id: "first-promo",
+        title: "Декоративные элементы: предложение",
         prev: "",
-        next: "Палитра цветов" + nextArrow,
+        next: "Обзор" + nextArrow,
     },
     1: {
+        id: "summary",
+        title: "Декоративные элементы: обзор",
+        prev: prevArrow + "Предложение",
+        next: "Палитра цветов" + nextArrow,
+    },
+    2: {
         id: "palitra",
         title: "Декоративные элементы: палитра цветов",
         prev: prevArrow + "Обзор",
         next: "Качества" + nextArrow,
     },
-    2: {
+    3: {
         id: "kachestva",
         title: "Декоративные элементы: качества",
         prev: prevArrow + "Палитра цветов",
         next: "Технология монтажа" + nextArrow,
     },
-    3: {
+    4: {
         id: "schema",
         title: "Декоративные элементы: монтаж",
         prev: prevArrow + "Качества",
         next: "Портфолио" + nextArrow,
     },
-    4: {
+    5: {
         id: "portfolio",
         title: "Декоративные элементы: портфолио",
         prev: prevArrow + "Монтаж",
         next: "Видео обзор" + nextArrow,
     },
-    5: {
+    6: {
         id: "video",
         title: "Декоративные элементы: видео обзор",
         prev: prevArrow + "Портфолио",
@@ -45,7 +51,7 @@ var control = {
     //     prev: prevArrow + "Видео обзор",
     //     next: "",
     // },
-    6: {
+    7: {
         id: "last-promo",
         title: "Декоративные элементы: звоните!",
         prev: prevArrow + "Видео",

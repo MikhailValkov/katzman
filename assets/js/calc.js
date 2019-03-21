@@ -39,6 +39,9 @@ var materials = {
             "cost": 800,
             "job_cost": 800,
             "warm_coef": 1
+        },
+        "decor": {
+            "cost": 150,
         }
     },
     "warm": {

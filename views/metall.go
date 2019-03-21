@@ -50,6 +50,7 @@ func MetallHandler(w http.ResponseWriter, r *http.Request) {
 		MaterialName: `Металический сайдинг`,
 		ID:           "metalPrice",
 		PictureURL:   "/assets/img/promo/metall.jpg",
+		UnitName:     "кв.м.",
 	}
 
 	if err := tmpl.Execute(w, data); err != nil {

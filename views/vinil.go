@@ -50,6 +50,7 @@ func VinilHandler(w http.ResponseWriter, r *http.Request) {
 		MaterialName: `Виниловый садйинг`,
 		ID:           "vinilPrice",
 		PictureURL:   "/assets/img/promo/vinil.jpg",
+		UnitName:     "кв.м.",
 	}
 	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)

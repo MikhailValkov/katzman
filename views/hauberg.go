@@ -37,6 +37,7 @@ func HaubergHandler(w http.ResponseWriter, r *http.Request) {
 		MaterialName: `Фасадная плитка "Технониколь"`,
 		ID:           "haubergPrice",
 		PictureURL:   "/assets/img/promo/hauberg.png",
+		UnitName:     "кв.м.",
 	}
 	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)

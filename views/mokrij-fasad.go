@@ -53,6 +53,7 @@ func MokrijFasadHandler(w http.ResponseWriter, r *http.Request) {
 		MaterialName: `Утепление фасадов, короед, шуба, мраморная крошка.`,
 		ID:           "mokrijPrice",
 		PictureURL:   "/assets/img/promo/koroed.jpg",
+		UnitName:     "кв.м.",
 	}
 
 	if err := tmpl.Execute(w, data); err != nil {

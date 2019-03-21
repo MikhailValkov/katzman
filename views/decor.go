@@ -6,6 +6,7 @@ import (
 
 	mobiledetect "github.com/Shaked/gomobiledetect"
 	"github.com/meehalkoff/loggi"
+	"gitlab.com/mvalkov/katzman/lib"
 )
 
 func DecorHandler(w http.ResponseWriter, r *http.Request) {
@@ -33,6 +34,7 @@ func DecorHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/top-panel/call.html",
 			"templates/top-panel/main-menu.html",
 			"templates/control-panel.html",
+			"templates/firstPromoBlock.html",
 			"templates/decor/index.html",
 			"templates/decor/summary.html",
 			"templates/decor/palitra.html",
@@ -44,8 +46,13 @@ func DecorHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/lastPromoBlock.html",
 		)
 	}
-
-	if err := tmpl.Execute(w, nil); err != nil {
+	data := lib.FirstPromoBlock{
+		MaterialName: `Декоративные элементы`,
+		ID:           "decorPrice",
+		PictureURL:   "/assets/img/promo/decor.jpg",
+		UnitName:     "м.п.",
+	}
+	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)
 	}
 }

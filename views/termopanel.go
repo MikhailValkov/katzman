@@ -51,6 +51,7 @@ func TermopanelHandler(w http.ResponseWriter, r *http.Request) {
 		MaterialName: `Термопанели`,
 		ID:           "termoPrice",
 		PictureURL:   "/assets/img/promo/termopanel.jpg",
+		UnitName:     "кв.м.",
 	}
 	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)
