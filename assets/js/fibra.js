@@ -53,7 +53,7 @@ var control = {
     },
     8: {
         id: "last-promo",
-        title: "Мокрый фасад: звоните!",
+        title: "Фиброцементный сайдинг: звоните!",
         prev: prevArrow + "Видео",
         next: "",
     },

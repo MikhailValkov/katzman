@@ -47,7 +47,7 @@ var control = {
     // },
     6: {
         id: "last-promo",
-        title: "Мокрый фасад: звоните!",
+        title: "Декоративные элементы: звоните!",
         prev: prevArrow + "Видео",
         next: "",
     },
