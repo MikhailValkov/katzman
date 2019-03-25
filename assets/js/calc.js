@@ -16,8 +16,8 @@ var materials = {
             "warm_coef": .35
         },
         "vinil": {
-            "cost": 400,
-            "job_cost": 400,
+            "cost": 450,
+            "job_cost": 360,
             "warm_coef": .35
         },
         "metal": {
@@ -36,12 +36,12 @@ var materials = {
             "warm_coef": 0
         },
         "klinker": {
-            "cost": 800,
-            "job_cost": 800,
+            "cost": 1750,
+            "job_cost": 750,
             "warm_coef": 1
         },
         "decor": {
-            "cost": 150,
+            "cost": 560,
         }
     },
     "warm": {
