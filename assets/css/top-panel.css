@@ -88,6 +88,11 @@
     text-align: right;
     margin-right: 5px;
   }
+  .top-panel-contacts-phone>b {
+    color: red;
+    text-shadow: 0 0 0.5px black;
+    font-size: 3.3rem;
+  }
   /* свойства строки с названием области */
   .top-panel-contacts-country {
     font-size: 1.5rem;
