@@ -21,8 +21,8 @@ var materials = {
             "warm_coef": .35
         },
         "metal": {
-            "cost": 500,
-            "job_cost": 500,
+            "cost": 530,
+            "job_cost": 400,
             "warm_coef": .35
         },
         "fibra": {
