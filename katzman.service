@@ -1,0 +1,15 @@
+[Unit]
+Description=katzman
+After=network.target
+StartLimitInterval=200
+StartLimitBurst=5
+
+[Service]
+User=root
+WorkingDirectory=/root/katzman
+ExecStart=/root/katzman/katzman
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
