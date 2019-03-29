@@ -1,0 +1,56 @@
+.CreditPromoBlock__Root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: calc(100vh - 135px);
+    width: 100%;
+    position: absolute;
+    transform: scale(0.8);
+    left: -100vw;
+    transition: 0.5s ease-in-out;
+    padding: 2em;
+}
+
+.CreditPromoBlock__Title {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 0.2em;
+}
+
+.CreditPromoBlock__Title2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.CreditPromoBlock__Row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.CreditPromoBlock__CreditText {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 1em;
+}
+
+.CreditPromoBlock__CreditText>p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.CreditPromoBlock__CreditText>p>b {
+    color: red;
+    font-size: 3.5rem;
+}
+
+.CreditPromoBlock__CreditImage {
+    width: 50%;
+}
+
+.CreditPromoBlock__CreditImage>img {
+    width: 100%;
+    transform: scale(0.8);
+}

@@ -31,6 +31,7 @@ func MokrijFasadHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/footer.html",
 			"templates/firstPromoBlock.html",
 			"templates/lastPromoBlock.html",
+			"templates/creditPromoBlock.html",
 			"templates/top-panel/top-panel.html",
 			"templates/top-panel/about.html",
 			"templates/top-panel/calc.html",
