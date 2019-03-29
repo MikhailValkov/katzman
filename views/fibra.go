@@ -45,6 +45,7 @@ func FibraHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/fibra/video.html",
 			"templates/fibra/promo.html",
 			"templates/lastPromoBlock.html",
+			"templates/creditPromoBlock.html",
 		)
 	}
 

@@ -44,6 +44,7 @@ func MetallHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/metall/video.html",
 			"templates/metall/promo.html",
 			"templates/lastPromoBlock.html",
+			"templates/creditPromoBlock.html",
 		)
 	}
 	data := lib.FirstPromoBlock{

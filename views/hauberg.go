@@ -31,6 +31,7 @@ func HaubergHandler(w http.ResponseWriter, r *http.Request) {
 		"templates/hauberg/video.html",
 		"templates/hauberg/promo.html",
 		"templates/lastPromoBlock.html",
+		"templates/creditPromoBlock.html",
 	)
 
 	data := lib.FirstPromoBlock{

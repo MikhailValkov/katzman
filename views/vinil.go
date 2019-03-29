@@ -44,6 +44,7 @@ func VinilHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/vinil/video.html",
 			"templates/vinil/promo.html",
 			"templates/lastPromoBlock.html",
+			"templates/creditPromoBlock.html",
 		)
 	}
 	data := lib.FirstPromoBlock{

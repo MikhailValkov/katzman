@@ -44,6 +44,7 @@ func DecorHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/decor/video.html",
 			"templates/decor/promo.html",
 			"templates/lastPromoBlock.html",
+			"templates/creditPromoBlock.html",
 		)
 	}
 	data := lib.FirstPromoBlock{
