@@ -23,6 +23,7 @@ func MetallHandler(w http.ResponseWriter, r *http.Request) {
 			"mobile/templates/call.html",
 			"mobile/templates/about.html",
 			"mobile/templates/firstPromoBlock.html",
+			"mobile/templates/creditPromoBlock.html",
 		)
 	} else {
 		tmpl.ParseFiles(
