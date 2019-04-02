@@ -23,6 +23,7 @@ func DecorHandler(w http.ResponseWriter, r *http.Request) {
 			"mobile/templates/calc.html",
 			"mobile/templates/call.html",
 			"mobile/templates/about.html",
+			"mobile/templates/firstPromoBlock.html",
 		)
 	} else {
 		tmpl.ParseFiles(

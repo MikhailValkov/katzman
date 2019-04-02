@@ -1,0 +1,45 @@
+.FirstPromoBlock__Root {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* border: 1px solid #ccc; */
+    /* min-height: 95vh; */
+    /* padding: 5px; */
+    /* background-image: url("https://ic.pics.livejournal.com/zdorovs/16627846/578591/578591_original.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #000d;
+    text-shadow: 0 0 5px #fffa;
+    width: 100%;
+}
+
+.FirstPromoBlock__Backside {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.55);
+    /* margin: 2em 20% 2em 20%; */
+    margin: 1em;
+    min-width: 50%;
+    padding: 2em 0 2em 0;
+    border: 1px solid #ccca;
+    border-radius: 5px;
+}
+
+.FirstPromoBlock__Backside hr {
+    margin: 2em 1em;
+}
+
+.FirstPromoBlock__DefaultFont {
+    font-size: 1.5rem;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.FirstPromoBlock__MaterialName {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}

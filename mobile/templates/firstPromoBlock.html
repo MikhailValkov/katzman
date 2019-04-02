@@ -1,0 +1,23 @@
+{{ define "firstPromoBlock" }}
+
+<div id="first-promo" class="FirstPromoBlock__Root" style="background-image: url('{{ .PictureURL }}');">
+    <div class="FirstPromoBlock__Backside">
+        <div>
+            <span class="FirstPromoBlock__MaterialName">{{ .MaterialName }}</span>
+            <br>
+            <hr>
+            <span class="FirstPromoBlock__DefaultFont">"ПОД КЛЮЧ"</span><br>
+            <span class="FirstPromoBlock__DefaultFont">работа + материал</span>
+        </div>
+        <div>
+            <span class="FirstPromoBlock__DefaultFont">от</span>
+
+            <span id="{{ .ID }}" class="FirstPromoBlock__MaterialName">0</span>
+
+            <span class="FirstPromoBlock__DefaultFont"> руб. за {{ .UnitName }}</span>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="/mobile/assets/css/first-promo-block.css">
+<script src="/assets/js/calculateMainContentPrice.js"></script>
+{{ end }}

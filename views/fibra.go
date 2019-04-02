@@ -23,6 +23,7 @@ func FibraHandler(w http.ResponseWriter, r *http.Request) {
 			"mobile/templates/calc.html",
 			"mobile/templates/call.html",
 			"mobile/templates/about.html",
+			"mobile/templates/firstPromoBlock.html",
 		)
 	} else {
 		tmpl.ParseFiles(
@@ -50,7 +51,7 @@ func FibraHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	data := lib.FirstPromoBlock{
-		MaterialName: `Фиброцементный сайдинг`,
+		MaterialName: `Сайдинг Фиброцемент`,
 		ID:           "fibraPrice",
 		PictureURL:   "/assets/img/promo/fibra.jpg",
 		UnitName:     "кв.м.",
