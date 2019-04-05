@@ -44,7 +44,7 @@ func KlinkerHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/klinker/schema.html",
 			"templates/klinker/otkos.html",
 			"templates/klinker/portfolio.html",
-			"templates/klinker/video.html",
+			"templates/shared/video.html",
 			"templates/klinker/promo.html",
 			"templates/lastPromoBlock.html",
 			"templates/creditPromoBlock.html",
@@ -55,6 +55,7 @@ func KlinkerHandler(w http.ResponseWriter, r *http.Request) {
 		ID:           "klinkerPrice",
 		PictureURL:   "/assets/img/promo/klinker.jpg",
 		UnitName:     "кв.м.",
+		YoutubeID:    "CHrMu9JZ_aY",
 	}
 	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)

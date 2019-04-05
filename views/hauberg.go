@@ -43,7 +43,7 @@ func HaubergHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/hauberg/schema.html",
 			"templates/hauberg/otkos.html",
 			"templates/hauberg/portfolio.html",
-			"templates/hauberg/video.html",
+			"templates/shared/video.html",
 			"templates/hauberg/promo.html",
 			"templates/lastPromoBlock.html",
 			"templates/creditPromoBlock.html",
@@ -55,6 +55,7 @@ func HaubergHandler(w http.ResponseWriter, r *http.Request) {
 		ID:           "haubergPrice",
 		PictureURL:   "/assets/img/promo/hauberg.png",
 		UnitName:     "кв.м.",
+		YoutubeID:    "LJAJc8XPbdc",
 	}
 	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)

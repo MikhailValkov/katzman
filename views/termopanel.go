@@ -44,7 +44,7 @@ func TermopanelHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/termopanel/schema.html",
 			"templates/termopanel/otkos.html",
 			"templates/termopanel/portfolio.html",
-			"templates/termopanel/video.html",
+			"templates/shared/video.html",
 			"templates/termopanel/promo.html",
 			"templates/lastPromoBlock.html",
 			"templates/creditPromoBlock.html",
@@ -55,6 +55,7 @@ func TermopanelHandler(w http.ResponseWriter, r *http.Request) {
 		ID:           "termoPrice",
 		PictureURL:   "/assets/img/promo/termopanel.jpg",
 		UnitName:     "кв.м.",
+		YoutubeID:    "otvAAro2qIU",
 	}
 	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)

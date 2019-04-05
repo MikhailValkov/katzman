@@ -43,7 +43,7 @@ func DecorHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/decor/kachestva.html",
 			"templates/decor/schema.html",
 			"templates/decor/portfolio.html",
-			"templates/decor/video.html",
+			"templates/shared/video.html",
 			"templates/decor/promo.html",
 			"templates/lastPromoBlock.html",
 			"templates/creditPromoBlock.html",
@@ -54,6 +54,7 @@ func DecorHandler(w http.ResponseWriter, r *http.Request) {
 		ID:           "decorPrice",
 		PictureURL:   "/assets/img/promo/decor.jpg",
 		UnitName:     "м.п.",
+		YoutubeID:    "L8aRCQcdznM",
 	}
 	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)

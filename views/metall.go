@@ -43,7 +43,7 @@ func MetallHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/metall/schema.html",
 			"templates/metall/otkos.html",
 			"templates/metall/portfolio.html",
-			"templates/metall/video.html",
+			"templates/shared/video.html",
 			"templates/metall/promo.html",
 			"templates/lastPromoBlock.html",
 			"templates/creditPromoBlock.html",
@@ -54,6 +54,7 @@ func MetallHandler(w http.ResponseWriter, r *http.Request) {
 		ID:           "metalPrice",
 		PictureURL:   "/assets/img/promo/metall.jpg",
 		UnitName:     "кв.м.",
+		YoutubeID:    "p_G9w0iF6yU",
 	}
 
 	if err := tmpl.Execute(w, data); err != nil {

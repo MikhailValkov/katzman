@@ -43,7 +43,7 @@ func VinilHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/vinil/schema.html",
 			"templates/vinil/otkos.html",
 			"templates/vinil/portfolio.html",
-			"templates/vinil/video.html",
+			"templates/shared/video.html",
 			"templates/vinil/promo.html",
 			"templates/lastPromoBlock.html",
 			"templates/creditPromoBlock.html",
@@ -54,6 +54,7 @@ func VinilHandler(w http.ResponseWriter, r *http.Request) {
 		ID:           "vinilPrice",
 		PictureURL:   "/assets/img/promo/vinil.jpg",
 		UnitName:     "кв.м.",
+		YoutubeID:    "ajuIoWYonv4",
 	}
 	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)

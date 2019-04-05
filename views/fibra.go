@@ -44,7 +44,7 @@ func FibraHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/fibra/schema.html",
 			"templates/fibra/otkos.html",
 			"templates/fibra/portfolio.html",
-			"templates/fibra/video.html",
+			"templates/shared/video.html",
 			"templates/fibra/promo.html",
 			"templates/lastPromoBlock.html",
 			"templates/creditPromoBlock.html",
@@ -56,6 +56,7 @@ func FibraHandler(w http.ResponseWriter, r *http.Request) {
 		ID:           "fibraPrice",
 		PictureURL:   "/assets/img/promo/fibra.jpg",
 		UnitName:     "кв.м.",
+		YoutubeID:    "q0BymYA4LR4",
 	}
 	if err := tmpl.Execute(w, data); err != nil {
 		loggi.Fatal(err)
