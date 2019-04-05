@@ -5,4 +5,5 @@ type FirstPromoBlock struct {
 	ID           string
 	PictureURL   string
 	UnitName     string
+	YoutubeID    string
 }

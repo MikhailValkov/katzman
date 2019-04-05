@@ -46,6 +46,7 @@ func MokrijFasadHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/mokrij-fasad/schema.html",
 			"templates/mokrij-fasad/otkos.html",
 			"templates/mokrij-fasad/portfolio.html",
+			// "templates/shared/video.html",
 			"templates/mokrij-fasad/video.html",
 			"templates/mokrij-fasad/promo.html",
 		)
@@ -56,6 +57,7 @@ func MokrijFasadHandler(w http.ResponseWriter, r *http.Request) {
 		ID:           "mokrijPrice",
 		PictureURL:   "/assets/img/promo/koroed.jpg",
 		UnitName:     "кв.м.",
+		YoutubeID:    "n_nHmqCOLVw",
 	}
 
 	if err := tmpl.Execute(w, data); err != nil {
