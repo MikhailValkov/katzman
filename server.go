@@ -12,7 +12,7 @@ import (
 func RunTLSServer(mux *http.ServeMux) {
 	certManager := autocert.Manager{
 		Prompt: autocert.AcceptTOS,
-		Cache:  autocert.DirCache("certs"),
+		Cache:  autocert.DirCache("/root/certs/"),
 	}
 
 	server := &http.Server{
