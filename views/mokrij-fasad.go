@@ -25,6 +25,7 @@ func MokrijFasadHandler(w http.ResponseWriter, r *http.Request) {
 			"mobile/templates/about.html",
 			"mobile/templates/firstPromoBlock.html",
 			"mobile/templates/creditPromoBlock.html",
+			"mobile/templates/lastPromoBlock.html",
 		)
 	} else {
 		tmpl.ParseFiles(

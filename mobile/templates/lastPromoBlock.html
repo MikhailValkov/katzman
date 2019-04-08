@@ -1,0 +1,28 @@
+{{ define "lastPromo" }}
+
+<div id="last-promo" class="LastPromoBlock__Root">
+    <div class="LastPromoBlock__Message">
+        <h1>
+            Мы готовы сделать ваш дом красивым прямо сейчас!
+        </h1>
+        <h1>
+            Звоните!<br>
+            <hr>
+            <a href="tel:+74722415533"> +7 (4722) 41-55-33</a>
+        </h1>
+    </div>
+    <div class="LastPromoBlock__Buttons" style="display: none;">
+        <button onclick="aboutToggle('solo');">
+            Позвонить
+        </button>
+        <button onclick="callToggle('solo');">
+            Перезвоните мне
+        </button>
+        <button onclick="calcToggle(false);">
+            Предварительный расчет
+        </button>
+    </div>
+</div>
+
+<link rel="stylesheet" href="/mobile/assets/css/last-promo-block.css">
+{{ end }}

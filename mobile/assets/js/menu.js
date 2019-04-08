@@ -114,7 +114,7 @@ function aboutToggle() {
 
 window.onscroll = function () {
     contentPosition = window.pageYOffset;
-    console.log(contentPosition);
+    // console.log(contentPosition);
 }
 
 // // let menuBlock = document.getElementById("main-menu");
