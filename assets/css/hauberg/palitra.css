@@ -9,7 +9,7 @@
 
 .palitra-color-block {
     height: 45%;
-    /* width: calc(25% - 30px); */
+    width: calc(20% - 30px);
     position: relative;
     transition: 0.1s ease-in-out;
     opacity: 0.9;
