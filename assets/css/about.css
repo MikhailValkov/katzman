@@ -77,9 +77,14 @@
 }
 
 .about-qualities-text {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   padding: 10px;
   text-align: center;
+}
+
+.about-qualities-text>b {
+  color: red;
+  font-size: 2.7rem;
 }
 
 .about-contacts-block {
