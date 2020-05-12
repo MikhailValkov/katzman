@@ -2,6 +2,7 @@ var prev = document.getElementById("control-prev");
 var title = document.getElementById("control-text");
 var next = document.getElementById("control-next");
 var currentSlide = 0;
+var delay = 200;
 
 next.innerHTML = control[0].next;
 title.innerHTML = control[0].title;
@@ -53,20 +54,20 @@ function prevSlide() {
 function wheelHandler(event) {
     event.preventDefault();
     if (event.deltaY > 0) {
-        nextSlide();
+        setTimeout(() => {  nextSlide(); }, delay);
     } else {
-        prevSlide();
+        setTimeout(() => {  prevSlide(); }, delay);
     }
 }
 
 function keyHandler(event) {
     if (event.keyCode === 37 || event.keyCode === 38) {
         // left
-        prevSlide();
+        setTimeout(() => {  prevSlide(); }, delay);
     }
     if (event.keyCode === 39 || event.keyCode === 40) {
         //  right
-        nextSlide();
+        setTimeout(() => {  nextSlide(); }, delay);
     }
 }
 
