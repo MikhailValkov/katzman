@@ -28,7 +28,7 @@ func Logging() Middleware {
 				remoteAddr = forwarded
 			}
 
-			defer func() { loggi.Info(r.URL.Path, "\t", remoteAddr, "\t", time.Since(start)) }()
+			defer func() { loggi.Info(r.URL.Path, "\t", remoteAddr, "\t", r.UserAgent, "\t", time.Since(start)) }()
 
 			// detect := mobiledetect.NewMobileDetect(r, nil)
 			// if detect.IsMobile() {
