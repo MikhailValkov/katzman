@@ -12,6 +12,7 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 
 	if r.URL.Path != "/" {
 		http.Redirect(w, r, "http://localhost", 301)
+		loggi.Warn("redirected to localhost from", "\t", r.Header.Get("X-Forwarded-For"))
 		return
 	}
 
