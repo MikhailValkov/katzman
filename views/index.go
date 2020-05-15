@@ -10,6 +10,11 @@ import (
 
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
 
+	if r.URL.Path != "/" {
+		http.Redirect(w, r, "http://localhost", 301)
+		return
+	}
+
 	tmpl := template.New("index")
 
 	detect := mobiledetect.NewMobileDetect(r, nil)
