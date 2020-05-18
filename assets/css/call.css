@@ -87,8 +87,12 @@
   flex-direction: column;
   justify-content: space-between;
   width: 50%;
-  height: 100%;
+  height: 50%;
   transform: scale(0.71);
+  /* border: 1px dimgray dotted; */
+  padding: 15px;
+  /* background-color: rgba(0, 255, 33, 0.1); */
+  margin-top: 5%;
 }
 
 .call-need-send {
