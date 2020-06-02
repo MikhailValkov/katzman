@@ -40,24 +40,30 @@ var control = {
         next: "Портфолио" + nextArrow,
     },
     6: {
-        id: "portfolio",
-        title: "Мокрый фасад: портфолио",
-        prev: prevArrow + "Устройство откосов",
-        next: "Видео обзор" + nextArrow,
+        id: "how-we-work",
+        title: "Мокрый фасад: как мы работаем",
+        prev: prevArrow + "Технология монтажа",
+        next: "Портфолио" + nextArrow,
     },
     7: {
+        id: "portfolio",
+        title: "Мокрый фасад: портфолио",
+        prev: prevArrow + "Как мы работаем",
+        next: "Видео обзор" + nextArrow,
+    },
+    8: {
         id: "video",
         title: "Мокрый фасад: видео обзор",
         prev: prevArrow + "Портфолио",
         next: "Рассрочка" + nextArrow,
     },
-    8: {
+    9: {
         id: "credit-promo",
         title: "Мокрый фасад: рассрочка",
         prev: prevArrow + "Видео",
         next: "Предложение" + nextArrow,
     },
-    9: {
+    10: {
         id: "last-promo",
         title: "Мокрый фасад: звоните!",
         prev: prevArrow + "Рассрочка",

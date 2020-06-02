@@ -8,6 +8,8 @@
 @import "main-menu.css";
 @import "last-promo-block.css";
 @import "credit-promo-block.css";
+@import "how-we-work.css";
+
 :root {
   --main-bg1-color: #262626;
   --main-bg2-color: #ffffff;
