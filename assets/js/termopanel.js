@@ -1,6 +1,6 @@
 var nextArrow = '<div class="control-next-arrow">▶▶</div>';
 var prevArrow = '<div class="control-prev-arrow">◀◀</div>';
-var maxSlidePosition = 9;
+var maxSlidePosition = 10;
 
 var control = {
     0: {
@@ -37,27 +37,33 @@ var control = {
         id: "otkos",
         title: "Термопанели: откосы",
         prev: prevArrow + "Технология монтажа",
-        next: "Портфолио" + nextArrow,
+        next: "Как мы работаем" + nextArrow,
     },
     6: {
+        id: "how-we-work",
+        title: "Термопанели: как мы работаем",
+        prev: prevArrow + "Откосы",
+        next: "Портфолио" + nextArrow,
+    },
+    7: {
         id: "portfolio",
         title: "Термопанели: портфолио",
         prev: prevArrow + "Устройство откосов",
         next: "Видео обзор" + nextArrow,
     },
-    7: {
+    8: {
         id: "video",
         title: "Термопанели: видео обзор",
         prev: prevArrow + "Портфолио",
         next: "Предложение" + nextArrow,
     },
-    8: {
+    9: {
         id: "credit-promo",
         title: "Термопанели: рассрочка",
         prev: prevArrow + "Видео",
         next: "Предложение" + nextArrow,
     },
-    9: {
+    10: {
         id: "last-promo",
         title: "Термопанели: звоните!",
         prev: prevArrow + "Рассрочка",

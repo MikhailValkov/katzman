@@ -43,6 +43,7 @@ func DecorHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/decor/palitra.html",
 			"templates/decor/kachestva.html",
 			"templates/decor/schema.html",
+			"templates/howWeWork.html",
 			"templates/decor/portfolio.html",
 			"templates/shared/video.html",
 			"templates/decor/promo.html",

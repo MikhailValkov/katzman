@@ -1,6 +1,6 @@
 var nextArrow = '<div class="control-next-arrow">▶▶</div>';
 var prevArrow = '<div class="control-prev-arrow">◀◀</div>';
-var maxSlidePosition = 9;
+var maxSlidePosition = 10;
 
 var control = {
     0: {
@@ -40,24 +40,30 @@ var control = {
         next: "Портфолио" + nextArrow,
     },
     6: {
+        id: "how-we-work",
+        title: "Виниловый сайдинг: как мы работаем",
+        prev: prevArrow + "Откосы",
+        next: "Портфолио" + nextArrow,
+    },
+    7: {
         id: "portfolio",
         title: "Виниловый сайдинг: портфолио",
         prev: prevArrow + "Устройство откосов",
         next: "Видео обзор" + nextArrow,
     },
-    7: {
+    8: {
         id: "video",
         title: "Виниловый сайдинг: видео обзор",
         prev: prevArrow + "Портфолио",
         next: "Предложение" + nextArrow,
     },
-    8: {
+    9: {
         id: "credit-promo",
         title: "Виниловый сайдинг: рассрочка",
         prev: prevArrow + "Видео",
         next: "Предложение" + nextArrow,
     },
-    9: {
+    10: {
         id: "last-promo",
         title: "Виниловый сайдинг: звоните!",
         prev: prevArrow + "Рассрочка",

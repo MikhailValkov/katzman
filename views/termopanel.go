@@ -44,6 +44,7 @@ func TermopanelHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/termopanel/kachestva.html",
 			"templates/termopanel/schema.html",
 			"templates/termopanel/otkos.html",
+			"templates/howWeWork.html",
 			"templates/termopanel/portfolio.html",
 			"templates/shared/video.html",
 			"templates/termopanel/promo.html",

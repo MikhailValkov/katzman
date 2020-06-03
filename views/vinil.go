@@ -43,6 +43,7 @@ func VinilHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/vinil/kachestva.html",
 			"templates/vinil/schema.html",
 			"templates/vinil/otkos.html",
+			"templates/howWeWork.html",
 			"templates/vinil/portfolio.html",
 			"templates/shared/video.html",
 			"templates/vinil/promo.html",

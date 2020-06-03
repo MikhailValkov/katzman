@@ -43,6 +43,7 @@ func HaubergHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/hauberg/kachestva.html",
 			"templates/hauberg/schema.html",
 			"templates/hauberg/otkos.html",
+			"templates/howWeWork.html",
 			"templates/hauberg/portfolio.html",
 			"templates/shared/video.html",
 			"templates/hauberg/promo.html",

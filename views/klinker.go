@@ -44,6 +44,7 @@ func KlinkerHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/klinker/kachestva.html",
 			"templates/klinker/schema.html",
 			"templates/klinker/otkos.html",
+			"templates/howWeWork.html",
 			"templates/klinker/portfolio.html",
 			"templates/shared/video.html",
 			"templates/klinker/promo.html",

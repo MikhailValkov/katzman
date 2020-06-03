@@ -43,6 +43,7 @@ func MetallHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/metall/kachestva.html",
 			"templates/metall/schema.html",
 			"templates/metall/otkos.html",
+			"templates/howWeWork.html",
 			"templates/metall/portfolio.html",
 			"templates/shared/video.html",
 			"templates/metall/promo.html",
