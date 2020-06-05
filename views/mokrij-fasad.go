@@ -47,6 +47,7 @@ func MokrijFasadHandler(w http.ResponseWriter, r *http.Request) {
 			"templates/mokrij-fasad/schema.html",
 			"templates/mokrij-fasad/otkos.html",
 			"templates/howWeWork.html",
+			"templates/mokrij-fasad/prices.html",
 			"templates/mokrij-fasad/portfolio.html",
 			"templates/shared/video.html",
 			"templates/mokrij-fasad/promo.html",

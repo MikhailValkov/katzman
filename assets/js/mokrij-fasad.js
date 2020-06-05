@@ -1,6 +1,6 @@
 var nextArrow = '<div class="control-next-arrow">▶▶</div>';
 var prevArrow = '<div class="control-prev-arrow">◀◀</div>';
-var maxSlidePosition = 10;
+var maxSlidePosition = 11;
 
 var control = {
     0: {
@@ -37,33 +37,39 @@ var control = {
         id: "otkos",
         title: "Мокрый фасад: устройство откосов",
         prev: prevArrow + "Технология монтажа",
-        next: "Портфолио" + nextArrow,
+        next: "Как мы работаем" + nextArrow,
     },
     6: {
         id: "how-we-work",
         title: "Мокрый фасад: как мы работаем",
-        prev: prevArrow + "Технология монтажа",
-        next: "Портфолио" + nextArrow,
+        prev: prevArrow + "Устройство откосов",
+        next: "Цены" + nextArrow,
     },
     7: {
-        id: "portfolio",
-        title: "Мокрый фасад: портфолио",
+        id: "prices",
+        title: "Мокрый фасад: цены",
         prev: prevArrow + "Как мы работаем",
-        next: "Видео обзор" + nextArrow,
+        next: "Портфолио" + nextArrow,
     },
     8: {
+        id: "portfolio",
+        title: "Мокрый фасад: портфолио",
+        prev: prevArrow + "Цены",
+        next: "Видео обзор" + nextArrow,
+    },
+    9: {
         id: "video",
         title: "Мокрый фасад: видео обзор",
         prev: prevArrow + "Портфолио",
         next: "Рассрочка" + nextArrow,
     },
-    9: {
+    10: {
         id: "credit-promo",
         title: "Мокрый фасад: рассрочка",
         prev: prevArrow + "Видео",
         next: "Предложение" + nextArrow,
     },
-    10: {
+    11: {
         id: "last-promo",
         title: "Мокрый фасад: звоните!",
         prev: prevArrow + "Рассрочка",
