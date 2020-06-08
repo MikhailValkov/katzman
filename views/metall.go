@@ -25,6 +25,7 @@ func MetallHandler(w http.ResponseWriter, r *http.Request) {
 			"mobile/templates/firstPromoBlock.html",
 			"mobile/templates/creditPromoBlock.html",
 			"mobile/templates/lastPromoBlock.html",
+			"mobile/templates/how-we-work.html",
 		)
 	} else {
 		tmpl.ParseFiles(
