@@ -38,7 +38,7 @@ var materials = {
         "klinker": {
             "cost": 1750,
             "job_cost": 750,
-            "warm_coef": 1
+            "warm_coef": 0
         },
         "decor": {
             "cost": 560,
@@ -86,14 +86,13 @@ function allUnpress(cls) {
 }
 
 function press(btn) {
-    // alert(btn.id);
     if (btn.pressed === undefined) {
-        // alert(btn.classList[0])
         allUnpress(btn.classList[0]);
         btn.classList.add("calc-btn-pressed");
         btn.pressed = true;
         btn.removeAttribute("onclick");
         controlDepth(btn);
+        controlWarm(btn);
         setCalcState(btn);
         calculateSumm();
     } else {
@@ -115,6 +114,57 @@ function controlDepth(btn) {
     if (allWarm.indexOf(btn.id) > -1) {
         enableDepth();
     }
+}
+
+function controlWarm(btn) {
+    try {
+        var warm_coef = materials.decor[btn.id].warm_coef;
+
+        if (warm_coef > 0) {
+            enableWarm()
+        } else {
+            disableWarm()
+        }
+    } catch (e) {
+        console.log('ops')
+    }
+}
+
+function disableWarm() {
+    var btns = [...document.querySelectorAll("div.calc-warm-btn")]
+    var nowarmBtn = document.querySelector('div#nowarm')
+
+    if (nowarmBtn.pressed === undefined) {
+        console.log(nowarmBtn)
+        press(nowarmBtn)
+    }
+
+
+    btns.forEach(btn => {
+        if (btn.id !== "nowarm") {
+            btn.pressed = undefined;
+            btn.classList.add("calc-btn-disabled");
+            btn.removeAttribute("onclick");
+            btn.classList.remove("calc-btn-pressed");
+        }
+
+
+    })
+}
+
+function enableWarm() {
+    var btns = [...document.querySelectorAll("div.calc-warm-btn")]
+
+    btns.forEach(btn => {
+        if (btn.id !== "nowarm") {
+            // btn.pressed = undefined;
+            btn.classList.remove("calc-btn-disabled");
+            btn.setAttribute("onclick", "press(" + btn.id + ");");
+        }
+    })
+
+    // press(document.getElementById(defaultSetting.warm))
+    // enableDepth()
 }
 
 function disableDepth() {
