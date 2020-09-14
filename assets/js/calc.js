@@ -194,7 +194,7 @@ var materials = {
         "penoplast": {
             "dsoft": 793,
             "dmid": 848,
-            "dhard": 1327
+            "dhard": 1013
         },
         "penopleks": {
             "dsoft": 843,
