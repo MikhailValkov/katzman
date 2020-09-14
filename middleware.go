@@ -5,6 +5,8 @@ import (
 	"net/http"
 	"time"
 
+	"fmt"
+
 	"github.com/meehalkoff/loggi"
 )
 
@@ -28,7 +30,11 @@ func Logging() Middleware {
 				remoteAddr = forwarded
 			}
 
-			defer func() { loggi.Info(r.URL.Path, "\t", remoteAddr, "\t", r.UserAgent(), "\t", time.Since(start)) }()
+			defer func() {
+				loggi.Info(
+					fmt.Sprintf("{ path: '%s', remote_ip: '%s', user_agent: '%s', req_time: '%s'}", r.URL.Path, remoteAddr, r.UserAgent(), time.Since(start)))
+				// r.URL.Path, "\t", remoteAddr, "\t", r.UserAgent(), "\t", time.Since(start))
+			}()
 
 			// detect := mobiledetect.NewMobileDetect(r, nil)
 			// if detect.IsMobile() {
