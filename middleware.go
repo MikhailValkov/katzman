@@ -31,17 +31,9 @@ func Logging() Middleware {
 			}
 
 			defer func() {
-				loggi.Info(
-					fmt.Sprintf("{ path: '%s', remote_ip: '%s', user_agent: '%s', req_time: '%s'}", r.URL.Path, remoteAddr, r.UserAgent(), time.Since(start)))
-				// r.URL.Path, "\t", remoteAddr, "\t", r.UserAgent(), "\t", time.Since(start))
+				fmt.Printf("{\"path\":\"%s\", \"remote_ip\":\"%s\", \"user_agent\":\"%s\", \"req_time\":\"%s\"}\n", r.URL.Path, remoteAddr, r.UserAgent(), time.Since(start))
 			}()
 
-			// detect := mobiledetect.NewMobileDetect(r, nil)
-			// if detect.IsMobile() {
-			// 	fmt.Fprint(w, "<h1><br><br><center>Мобильная версия в разработке.</center></h1>")
-			// 	return
-			// }
-			// Call the next middleware/handler in chain
 			f(w, r)
 		}
 	}
