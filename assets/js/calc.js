@@ -74,7 +74,7 @@ var materials = {
         "penopleks": {
             "dsoft": 260,
             "dmid": 330,
-            "dhard": 580
+            "dhard": 600
         },
     },
     "vinil": {
@@ -103,7 +103,7 @@ var materials = {
         },
     },
     "metal": {
-        "cost": 630,
+        "cost": 805,
         "job_cost": 300,
         "warm_coef": 1,
         "nowarm": {
@@ -112,9 +112,9 @@ var materials = {
             "dhard": 0
         },
         "vata": {
-            "dsoft": 170,
-            "dmid": 220,
-            "dhard": 320
+            "dsoft": 218,
+            "dmid": 231,
+            "dhard": 362
         },
         "penoplast": {
             "dsoft": 220,
@@ -128,7 +128,7 @@ var materials = {
         },
     },
     "fibra": {
-        "cost": 1380,
+        "cost": 1175,
         "job_cost": 300,
         "warm_coef": 1,
         "nowarm": {
@@ -137,9 +137,9 @@ var materials = {
             "dhard": 0
         },
         "vata": {
-            "dsoft": 180,
-            "dmid": 220,
-            "dhard": 340
+            "dsoft": 218,
+            "dmid": 231,
+            "dhard": 362
         },
         "penoplast": {
             "dsoft": 220,
@@ -149,11 +149,11 @@ var materials = {
         "penopleks": {
             "dsoft": 270,
             "dmid": 370,
-            "dhard": 570
+            "dhard": 600
         },
     },
     "termo": {
-        "cost": 850,
+        "cost": 1200,
         "job_cost": 400,
         "warm_coef": 0,
         "nowarm": {
@@ -178,28 +178,28 @@ var materials = {
         },
     },
     "klinker": {
-        "cost": 2300,
-        "job_cost": 0,
-        "warm_coef": 0,
+        "cost": 850,
+        "job_cost": 1140,
+        "warm_coef": 1,
         "nowarm": {
             "dsoft": 0,
             "dmid": 0,
             "dhard": 0
         },
         "vata": {
-            "dsoft": 0,
-            "dmid": 0,
-            "dhard": 0
+            "dsoft": 890,
+            "dmid": 1005,
+            "dhard": 1327
         },
         "penoplast": {
-            "dsoft": 0,
-            "dmid": 0,
-            "dhard": 0
+            "dsoft": 793,
+            "dmid": 848,
+            "dhard": 1327
         },
         "penopleks": {
-            "dsoft": 0,
-            "dmid": 0,
-            "dhard": 0
+            "dsoft": 843,
+            "dmid": 926,
+            "dhard": 1169
         },
 
     },
